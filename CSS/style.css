@@ -1,0 +1,9 @@
+:root{
+    --color1: #00a5d4;
+}
+
+div{
+    background-color: var(--color1);
+    width: 100px;
+    height: 100px;
+}
