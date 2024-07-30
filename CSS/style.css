@@ -128,19 +128,21 @@ main{
     display: flex;
 }
 
-.background1{
-
-}
-.background2{
-    
-}
-.background3{
-    
-}
 .slider-section{
     width: calc(100% / 3);
     height: 100%;
 }
+
+.background1{
+    background-image: url(images/bk1.jpg);
+}
+.background2{
+    background-image: url(images/bk2.jpg);
+}
+.background3{
+    background-image: url(images/bk3.jpg);
+}
+
 
 .whatsapp {
     position: fixed;
