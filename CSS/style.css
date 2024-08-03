@@ -2,6 +2,11 @@
     --color1: #00a5d4;
     --color2: rgba(0, 0, 0, 0.274);
     --color3: rgb(58, 58, 58);
+    --carrera_width: calc(97% / 3);
+    --carrera_height: calc(110vh / 2);
+    --carrera_background-size: cover;
+    --carrera_border-radius: 20px;
+    --carrera_margin: 0 0.5%;
 }
 *{
     box-sizing: border-box;
@@ -198,48 +203,115 @@ main{
     color: var(--color3);
 }
 .carreras-content{
-    background-color: rgb(27, 27, 200);
-    height: 130vh;
+    height: 114vh;
     display: flex;
     flex-wrap: wrap;
     padding: 0 15%;
 }
 .carrera{
-    width: calc(100% / 3);
-    height: calc(110vh / 2);
+    width: var(--carrera_width);
+    height: var(--carrera_height);
     background-image: url(adminYsistemas.jpg);
-    background-size: cover;
-    border-radius: 20px;
+    background-size: var(--carrera_background-size);
+    border-radius: var(--carrera_border-radius);
+    margin: var(--carrera_margin);
+}
+/*Estilo dinámico para JA src = carreras.js*/
+.carrera2{
+    background-image: url(computacion-informatica.jpg);
+    width: var(--carrera_width);
+    height: var(--carrera_height);
+    background-size: var(--carrera_background-size);
+    border-radius: var(--carrera_border-radius);
+    margin: var(--carrera_margin);
+}
+.carrera3{
+    background-image: url(electricidad-industrial.jpg);
+    width: var(--carrera_width);
+    height: var(--carrera_height);
+    background-size: var(--carrera_background-size);
+    border-radius: var(--carrera_border-radius);
+    margin: var(--carrera_margin);
+}
+.carrera4{
+    background-image: url(dibujo-arquitectonico.jpg);
+    width: var(--carrera_width);
+    height: var(--carrera_height);
+    background-size: var(--carrera_background-size);
+    border-radius: var(--carrera_border-radius);
+    margin: var(--carrera_margin);
+}
+.carrera5{
+    background-image: url(mecanica-automotriz.jpg);
+    width: var(--carrera_width);
+    height: var(--carrera_height);
+    background-size: var(--carrera_background-size);
+    border-radius: var(--carrera_border-radius);
+    margin: var(--carrera_margin);
+}
+.carrera6{
+    background-image: url(graphic-design.jpg);
+    width: var(--carrera_width);
+    height: var(--carrera_height);
+    background-size: var(--carrera_background-size);
+    border-radius: var(--carrera_border-radius);
+    margin: var(--carrera_margin);
+}
+/*---------------------------------------*/
+.carrera-fade{
+    width: 100%;
+    height: 100%;
     display: flex;
     align-items: flex-end;
+    background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.828));
+    border-radius: 20px;
 }
 .carrera-content{
     display: flex;
     flex-direction: column;
-    height: 50%;
+    height: 70%;
     width: 100%;
     border-radius: 0 0 20px 20px;
-    background-color: #00a5d4;
+    /* background-color: #00a5d4; */
 }
 .carrera-content p{
     color: #fff;
-    height: 70%;
+    height: 50%;
     display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 1.9em;
+    padding: 0 5%;
 }
 .carrera-button{
     background-color: transparent;
     border: 1px solid transparent;
     text-decoration: none;
-    height: 30%;
+    height: 50%;
     width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 5%;
+}
+.carrera-button a{
+    border: 2px solid #fff;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 30px;
+    width: 50%;
+    height: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 1.4em;
 }
-.carrera-button a{
-    border: 1px solid #fff;
-    text-decoration: none;
-    color: #fff;
+.carrera-button a:hover{
+    background-color: var(--color1);
+    transition: .6s;
+}
+.conoce-mas{
+    height: 20vh;
 }
 /*-----------------------------------|
 |        WHATSAPP FLOTANTE           |
