@@ -2,11 +2,11 @@
     --color1: #00a5d4;
     --color2: rgba(0, 0, 0, 0.274);
     --color3: rgb(58, 58, 58);
-    --carrera_width: calc(97% / 3);
-    --carrera_height: calc(110vh / 2);
+    --carrera_width: calc(94% / 3);
+    --carrera_height: calc(107vh / 2);
     --carrera_background-size: cover;
     --carrera_border-radius: 20px;
-    --carrera_margin: 0 0.5%;
+    --carrera_margin: 0 1%;
 }
 *{
     box-sizing: border-box;
@@ -206,7 +206,7 @@ main{
     height: 114vh;
     display: flex;
     flex-wrap: wrap;
-    padding: 0 15%;
+    padding: 0 12%;
 }
 .carrera{
     width: var(--carrera_width);
@@ -278,10 +278,10 @@ main{
     color: #fff;
     height: 50%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-end;
-    font-size: 1.9em;
-    padding: 0 5%;
+    font-size: 1.7em;
+    padding: 0 7%;
 }
 .carrera-button{
     background-color: transparent;
@@ -292,7 +292,7 @@ main{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding: 0 5%;
+    padding: 0 7%;
 }
 .carrera-button a{
     border: 2px solid #fff;
