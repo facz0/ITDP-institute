@@ -7,61 +7,67 @@
     <link rel="stylesheet" href="CSS/style.css">
     <!-- api de iconos -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- api de iconos 2 -->
+    <script src="https://kit.fontawesome.com/6d29a0c53e.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <nav>
-        <div class="logo">
-            <img src="" alt="Logo">
-        </div>
-        <ul class="menu">
-            <li class="dropdown">
-                <a href="#">Carreras</a>
-                <ul class="submenu">
-                    <li><a href="#">CARRERAS DE ADMINISTRACIÓN Y NEGOCIOS</a></li>
-                    <li><a href="#">CARRERAS DE COMUNICACIONES</a></li>
-                    <li><a href="#">CARRERAS DE TECNOLOGÍAS DE LA INFORMACIÓN</a></li>
-                    <li><a href="#">CARRERAS DE INGENIERÍA</a></li>
-                    <li><a href="#">CARRERAS DE DISEÑO</a></li>
-                </ul>
-            </li>
-            <li class="dropdown">
-                <a href="#">Cursos</a>
-                <ul class="submenu">
-                    <li><a href="#">Curso</a></li>
-                    <li><a href="#">Curso</a></li>
-                    <li><a href="#">Curso</a></li>
-                    <li><a href="#">Curso</a></li>
-                    <li><a href="#">Curso</a></li>
-                    <li><a href="#">Curso</a></li>
-                </ul>
-            </li>
-            <li class="dropdown">
-                <a href="#">Conoce mas</a>
-                <ul class="submenu">
-                    <li><a href="#">Sobre esta</a></li>
-                    <li><a href="#">Hermosa</a></li>
-                    <li><a href="#">Institución</a></li>
-                </ul>
-            </li>
-        </ul>
-        <div class="inscribete">
-            <button>Inscríbete</button>
-        </div>
-    </nav>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/logoFull.png" alt="Logo">
+            </div>
+            <ul class="menu">
+                <li class="dropdown">
+                    <a href="#">Carreras</a>
+                    <ul class="submenu">
+                        <li><a href="#"><i class="fa-solid fa-laptop-code fa-2xl"></i>CARRERAS DE TECNOLOGÍAS DE LA INFORMACIÓN</a></li>
+                        <li><a href="#"><i class='bx bx-hard-hat bx-lg'></i>CARRERAS DE INGENIERÍA</a></li>
+                        <li><a href="#"><i class="fa-solid fa-pen-nib fa-2xl"></i>CARRERAS DE DISEÑO</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Cursos</a>
+                    <ul class="submenu">
+                        <li><a href="#"><i class="fa-regular fa-file-excel fa-2xl"></i>Excel profesional</a></li>
+                        <li><a href="#"><i class='bx bxl-python bx-lg'></i>Python</a></li>
+                        <li><a href="#"><i class='bx bxl-java bx-lg' ></i>Java</a></li>
+                        <li><a href="#"><i class='bx bxl-html5 bx-lg' ></i>HTML y CSS</a></li>
+                        <li><a href="#"><i class="fa-solid fa-gamepad fa-2xl"></i>Creación de vedeojuegos</a></li>
+                        <li><a href="#"><i class='bx bx-desktop bx-lg' ></i>Reparación de PC</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Conoce más</a>
+                </li>
+            </ul>
+            <div class="inscribete">
+                <button>Inscríbete</button>
+            </div>
+            <div class="inscribete">
+                <button>Aula Virtual</button>
+            </div>
+        </nav>
+    </header>
+    
     <main>
+        <!------------------------------|
+        |           CARRUSEL            |
+        |------------------------------->
         <div class="container-carrusel">
             <div class="carruseles" id="slider">
                 <!-- Carrusel 1 -->
                 <section class="slider-section background1">
-                    
+                    <section class="gradient">
+
+                    </section>
                 </section>
                 <!-- Carrusel 2 -->
                 <section class="slider-section background2">
-
+                    <section class="gradient"></section>
                 </section>
                 <!-- Carrusel 3 -->
                 <section class="slider-section background3">
-
+                    <section class="gradient"></section>
                 </section>
             </div>
             <div class="btn-left">
@@ -71,12 +77,53 @@
                 <i class='bx bxs-chevron-right bx-md'></i>
             </div>
         </div>
+
+        <section class="itdp-name-container">
+            <section class="itdp-name">
+                <h2>
+                    INSTITUTO TECNOLÓGICO DEL PERÚ
+                </h2>
+                <img src="images/logo_solo.png" alt="">
+            </section>
+        </section>
+        
+        
+        <section class="carreras-container">
+            <div class="carreras-h2-container">
+                <h2>Carreras</h2>
+            </div>
+
+            <section class="carreras-content">
+                <section class="carrera">
+                    <div class="carrera-content">
+                        <p>Administración y Sistemas</p>
+                        <button class="carrera-button">
+                            <a href="#">
+                                Descubrir
+                            </a>
+                        </button>
+                    </div>
+                    
+                </section>
+                
+            </section>
+
+            <section class="conoce-mas">
+
+            </section>
+        </section>
+
     </main>
+
+    <footer>
+
+    </footer>
 
     <div class="whatsapp">
         <img src="" alt="WhatsApp">
         <div class="wasap">¡Conversamos aquí!</div>
     </div>
+
 <script src="JS/bkhome.js"></script>
 </body>
 </html>

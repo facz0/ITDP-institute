@@ -17,9 +17,9 @@ let withImg = 100 / sliderSection.length;
 
 //aplicamos la funcion nativa setInterval, en la cual llamamos a una funcion cada 3 segundos
 //en un bucle infinito
-setInterval(()=>{
-    moveToRight();
-}, 3000);
+// setInterval(()=>{
+//     moveToRight();
+// }, 3000);
 
 //creamos la funcion que se ejecutará con el evento click hacia la derecha
 function moveToRight(){
