@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ITDP - Home</title>
+    <!-- favicon -->
+    <link rel="icon" href="images/logo_solo.png">
     <link rel="stylesheet" href="CSS/style.css">
     <!-- api de iconos -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -18,7 +20,7 @@
             </div>
             <ul class="menu">
                 <li class="dropdown">
-                    <a href="#">Carreras</a>
+                    <a href="#">CARRERAS</a>
                     <ul class="submenu">
                         <li><a href="#"><i class="fa-solid fa-laptop-code fa-2xl"></i>CARRERAS DE TECNOLOGÍAS DE LA INFORMACIÓN</a></li>
                         <li><a href="#"><i class='bx bx-hard-hat bx-lg'></i>CARRERAS DE INGENIERÍA</a></li>
@@ -26,7 +28,7 @@
                     </ul>
                 </li>
                 <li class="dropdown">
-                    <a href="#">Cursos</a>
+                    <a href="#">CURSOS CORTOS</a>
                     <ul class="submenu">
                         <li><a href="#"><i class="fa-regular fa-file-excel fa-2xl"></i>Excel profesional</a></li>
                         <li><a href="#"><i class='bx bxl-python bx-lg'></i>Python</a></li>
@@ -37,7 +39,7 @@
                     </ul>
                 </li>
                 <li class="dropdown">
-                    <a href="#">Conoce más</a>
+                    <a href="#">CONOCE MÁS</a>
                 </li>
             </ul>
             <div class="inscribete">
@@ -78,6 +80,8 @@
             </div>
         </div>
 
+        
+
         <section class="itdp-name-container">
             <section class="itdp-name">
                 <h2>
@@ -87,33 +91,56 @@
             </section>
         </section>
         
-        
+        <!------------------------------|
+        |           CARRERAS            |
+        |------------------------------->
         <section class="carreras-container">
             <div class="carreras-h2-container">
                 <h2>Carreras</h2>
             </div>
-
             <section class="carreras-content">
-                <!-- <section class="carrera">
-                    <div class="carrera-fade">
-                        <div class="carrera-content">
-                        <p>Administración y Sistemas</p>
-                        <button class="carrera-button">
-                            <a href="#">Descubrir</a>
-                        </button>
-                        </div>
-                    </div>
-                </section> -->
+                <!-- <section class="carrera"><div class="carrera-fade"><div class="carrera-content"><p>Administración y Sistemas</p><button class="carrera-button"><a href="#">Descubrir</a></button></div></div></section> -->
             </section>
-
             <section class="conoce-mas">
-                <button>Ver todas las carreras</button>
+                <button><a href="">Ver todas las carreras</a></button>
             </section>
         </section>
 
+        <!------------------------------|
+        |        CURSOS CORTOS          |
+        |------------------------------->     
+        <section class="cursos-container">
+            <div class="cursos-h2-container">
+                <h2>CURSOS CORTOS</h2>
+            </div>
+
+            <div class="container-cursos-carrusel">
+                <div class="cursos-carruseles" id="cursos-slider">
+                    <!-- Contenido -->
+                    <!-- <section class="cursos-slider-section c-background1">
+                        <section class="cursos-gradient">
+                            <div class="cursos-content">
+                                <p>Excel Profesional</p>
+                                <button class="cursos-button">
+                                    <a href="#">DESCUBRIR</a>
+                                </button>
+                            </div>
+                        </section>
+                    </section> -->
+                </div>
+                <div class="btn-left">
+                    <i class='bx bx-left-arrow-alt bx-md'></i>
+                </div>
+                <div class="btn-right">
+                    <i class='bx bx-right-arrow-alt bx-md'></i>
+                </div>
+            </div>
+
+        </section>   
+
     </main>
         <!------------------------------|
-        |           FOOTER            |
+        |           FOOTER              |
         |------------------------------->
     <footer>
         <div class="footer-container">
@@ -159,5 +186,6 @@
 
 <script src="JS/bkhome.js"></script>
 <script src="JS/carreras.js"></script>
+<script src="JS/cursos.js"></script>
 </body>
 </html>

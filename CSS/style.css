@@ -310,8 +310,159 @@ main{
     background-color: var(--color1);
     transition: .6s;
 }
+/*boton de conoce más*/
 .conoce-mas{
     height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.conoce-mas button{
+    border: 3px solid gray;
+    background-color: transparent;
+    width: 20%;
+    height: 40%;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+}
+.conoce-mas button:hover{
+    background-color: gray;
+    border: 3px solid #fff;
+}
+.conoce-mas button a{
+    text-decoration: none;
+    color: gray;
+    font-size: 1.6em;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.conoce-mas button a:hover{
+    color: white;
+}
+
+/*-----------------------------------|
+|          CURSOS SECTION            |
+|-----------------------------------*/
+/* .cursos-containeR{} */
+.cursos-h2-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+}
+.cursos-h2-container h2{
+    text-align: center;
+    width: 26vw;
+    height: 8vh;
+    border-bottom: 5px solid var(--color1);
+    font-size: 2.5em;
+    color: var(--color3);
+}
+.container-cursos-carrusel{
+    position: relative;
+    height: 50vh;
+    background-color: rgb(255, 255, 255);
+    margin: 0 11%;
+    overflow: hidden;
+}
+.cursos-carruseles{
+    width: 200%;
+    height: 100%;
+    display: flex;
+}
+.cursos-slider-section{
+    width: calc(94% / 6);
+    height: 100%;
+    background-size: cover;
+    border-radius: 20px;
+    margin: 0 1%;
+}
+.cursos-gradient{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.69));
+    border-radius: 15px;
+    display: flex;
+    align-items: flex-end;
+}
+.cursos-content{
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    width: 100%;
+    border-radius: 0 0 15px 15px;
+}
+.cursos-content p{
+    color: #fff;
+    height: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    font-size: 1.5em;
+    padding: 0 15%;
+}
+.cursos-button{
+    background-color: transparent;
+    border: 1px solid transparent;
+    text-decoration: none;
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 15%;
+}
+.cursos-button a{
+    border: 2px solid #fff;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 30px;
+    width: 60%;
+    height: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+}
+.c-background1{
+    background-image: url(carreras-img/excel.jpg);
+    background-position: center;
+}
+.c-background2{
+    background-image: url(carreras-img/py.jpg);
+    background-position: center;
+}
+.c-background3{
+    background-image: url(carreras-img/java.jpg);
+    background-position: center;
+}
+.c-background4{
+    background-image: url(carreras-img/html.jpg);
+    background-position: center;
+}
+.c-background5{
+    background-image: url(carreras-img/game.jpg);
+    background-position: center;
+}
+.c-background6{
+    background-image: url(carreras-img/pc.jpg);
+    background-position: center;
+}
+.bx-left-arrow-alt{
+    color: var(--color1);
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 2px 1px 5px #000 ;
+}
+.bx-right-arrow-alt{
+    color: var(--color1);
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: -2px 1px 5px #000 ;
 }
 /*-----------------------------------|
 |        WHATSAPP FLOTANTE           |
@@ -353,6 +504,7 @@ footer {
     background-color: white;
     color: black;
     padding: 20px 0;
+    margin-top: 40vh;
 }
 
 .footer-container {
