@@ -8,7 +8,8 @@
     --carrera_border-radius: 20px;
     --carrera_margin: 0 1%;
 }
-*{
+
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -26,19 +27,22 @@ nav {
     background-color: var(--color2);
     color: white;
     padding: 10px 20px;
-    position: fixed; 
+    position: fixed;
     top: 0;
     width: 100%;
     height: 100px;
     box-sizing: border-box;
     z-index: 1000;
 }
-.logo{
-    width: 14%;    
+
+.logo {
+    width: 14%;
 }
+
 .logo img {
     width: 100%;
 }
+
 .menu {
     list-style-type: none;
     margin: 0;
@@ -47,24 +51,28 @@ nav {
     flex-grow: 1;
     justify-content: center;
 }
+
 .menu li {
     position: relative;
     margin: 0 20px;
 }
+
 .menu li a {
     color: white;
     text-decoration: none;
     padding: 8px 16px;
     display: block;
 }
+
 .menu li a:hover {
     background-color: gray;
     border-radius: 10px;
 }
+
 .submenu {
     display: none;
     position: absolute;
-    top: 100%; 
+    top: 100%;
     left: 50%;
     transform: translateX(-50%);
     background-color: rgb(94, 94, 94);
@@ -78,8 +86,9 @@ nav {
 }
 
 .submenu li {
-    margin:0 5px ;
+    margin: 0 5px;
 }
+
 .submenu li a {
     padding: 10px 20px;
     color: white;
@@ -88,77 +97,106 @@ nav {
     justify-content: center;
     height: 100%;
 }
+
 .submenu li a:hover {
     background-color: gray;
     border-radius: 10px;
     color: white;
 }
+
 .menu li:hover .submenu {
     display: inline-flex;
 }
+
 .inscribete {
     margin-left: auto;
 }
+
 .inscribete button {
     background-color: gray;
     color: white;
-    border: none;
+    /*border: none;
+    width: 100%;
     padding: 10px 30px;
     cursor: pointer;
     font-size: 16px;
     border-radius: 20px;
+    lo modifique por siaca aca esta el original*/
+    height: 45px;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
 }
+
 .inscribete button:hover {
     background-color: var(--color1);
 }
 
 
 
-main{
+main {
     position: relative;
 }
 
 /*-----------------------------------|
 |           CARRUSEL HOME            |
 |-----------------------------------*/
-.container-carrusel{
+.container-carrusel {
     position: relative;
     width: 100%;
     height: 97vh;
     background-color: rgb(255, 255, 255);
     overflow: hidden;
 }
-.carruseles{
+
+.carruseles {
     width: 300%;
     height: 100%;
     display: flex;
 }
-.slider-section{
+
+.slider-section {
     width: calc(100% / 3);
     height: 100%;
 }
-.btn-left, .btn-right{
+
+.btn-left,
+.btn-right {
     display: flex;
     position: absolute;
     top: 50%;
     cursor: pointer;
 }
-.btn-left{left: 1px;}.btn-right{right: 1px;}
-.background1{
-    
+
+.btn-left {
+    left: 1px;
+}
+
+.btn-right {
+    right: 1px;
+}
+
+.background1 {
+
     background-image: url(bk1.jpg);
     background-size: cover;
-    
+
 }
-.background2{
+
+.background2 {
     background-image: url(bk2.jpg);
     background-size: cover;
 }
-.background3{
+
+.background3 {
     background-image: url(bk3.jpg);
     background-size: cover;
 }
-.gradient{
+
+.gradient {
     width: 100%;
     height: 100%;
     background: linear-gradient(to left, transparent, rgba(0, 0, 0, 0.69));
@@ -167,13 +205,14 @@ main{
 /*-----------------------------------|
 |         NOMBRE DEL ITDP            |
 |-----------------------------------*/
-.itdp-name-container{
+.itdp-name-container {
     margin-top: 10vh;
     height: 40vh;
     display: flex;
     background-color: var(--color1);
 }
-.itdp-name{
+
+.itdp-name {
     margin: 5% auto 0 auto;
     background-color: #ffffff;
     height: 20vh;
@@ -185,16 +224,18 @@ main{
     font-size: 1.6em;
     color: rgb(58, 58, 58);
 }
+
 /*-----------------------------------|
 |         CARRERAS SECTION           |
 |-----------------------------------*/
-.carreras-h2-container{
+.carreras-h2-container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 30vh;
 }
-.carreras-h2-container h2{
+
+.carreras-h2-container h2 {
     text-align: center;
     width: 11vw;
     height: 7vh;
@@ -202,13 +243,15 @@ main{
     font-size: 2em;
     color: var(--color3);
 }
-.carreras-content{
+
+.carreras-content {
     height: 114vh;
     display: flex;
     flex-wrap: wrap;
     padding: 0 12%;
 }
-.carrera{
+
+.carrera {
     width: var(--carrera_width);
     height: var(--carrera_height);
     background-image: url(adminYsistemas.jpg);
@@ -216,8 +259,9 @@ main{
     border-radius: var(--carrera_border-radius);
     margin: var(--carrera_margin);
 }
+
 /*Estilo dinámico para JA src = carreras.js*/
-.carrera2{
+.carrera2 {
     background-image: url(computacion-informatica.jpg);
     width: var(--carrera_width);
     height: var(--carrera_height);
@@ -225,7 +269,8 @@ main{
     border-radius: var(--carrera_border-radius);
     margin: var(--carrera_margin);
 }
-.carrera3{
+
+.carrera3 {
     background-image: url(electricidad-industrial.jpg);
     width: var(--carrera_width);
     height: var(--carrera_height);
@@ -233,7 +278,8 @@ main{
     border-radius: var(--carrera_border-radius);
     margin: var(--carrera_margin);
 }
-.carrera4{
+
+.carrera4 {
     background-image: url(dibujo-arquitectonico.jpg);
     width: var(--carrera_width);
     height: var(--carrera_height);
@@ -241,7 +287,8 @@ main{
     border-radius: var(--carrera_border-radius);
     margin: var(--carrera_margin);
 }
-.carrera5{
+
+.carrera5 {
     background-image: url(mecanica-automotriz.jpg);
     width: var(--carrera_width);
     height: var(--carrera_height);
@@ -249,7 +296,8 @@ main{
     border-radius: var(--carrera_border-radius);
     margin: var(--carrera_margin);
 }
-.carrera6{
+
+.carrera6 {
     background-image: url(graphic-design.jpg);
     width: var(--carrera_width);
     height: var(--carrera_height);
@@ -257,8 +305,9 @@ main{
     border-radius: var(--carrera_border-radius);
     margin: var(--carrera_margin);
 }
+
 /*---------------------------------------*/
-.carrera-fade{
+.carrera-fade {
     width: 100%;
     height: 100%;
     display: flex;
@@ -266,7 +315,8 @@ main{
     background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.828));
     border-radius: 20px;
 }
-.carrera-content{
+
+.carrera-content {
     display: flex;
     flex-direction: column;
     height: 70%;
@@ -274,7 +324,8 @@ main{
     border-radius: 0 0 20px 20px;
     /* background-color: #00a5d4; */
 }
-.carrera-content p{
+
+.carrera-content p {
     color: #fff;
     height: 50%;
     display: flex;
@@ -283,7 +334,8 @@ main{
     font-size: 1.7em;
     padding: 0 7%;
 }
-.carrera-button{
+
+.carrera-button {
     background-color: transparent;
     border: 1px solid transparent;
     text-decoration: none;
@@ -294,7 +346,8 @@ main{
     align-items: center;
     padding: 0 7%;
 }
-.carrera-button a{
+
+.carrera-button a {
     border: 2px solid #fff;
     text-decoration: none;
     color: #fff;
@@ -306,18 +359,21 @@ main{
     align-items: center;
     font-size: 1.4em;
 }
-.carrera-button a:hover{
+
+.carrera-button a:hover {
     background-color: var(--color1);
     transition: .6s;
 }
+
 /*boton de conoce más*/
-.conoce-mas{
+.conoce-mas {
     height: 20vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.conoce-mas button{
+
+.conoce-mas button {
     border: 3px solid gray;
     background-color: transparent;
     width: 20%;
@@ -326,11 +382,13 @@ main{
     display: flex;
     align-items: center;
 }
-.conoce-mas button:hover{
+
+.conoce-mas button:hover {
     background-color: gray;
     border: 3px solid #fff;
 }
-.conoce-mas button a{
+
+.conoce-mas button a {
     text-decoration: none;
     color: gray;
     font-size: 1.6em;
@@ -340,7 +398,8 @@ main{
     align-items: center;
     justify-content: center;
 }
-.conoce-mas button a:hover{
+
+.conoce-mas button a:hover {
     color: white;
 }
 
@@ -348,13 +407,14 @@ main{
 |          CURSOS SECTION            |
 |-----------------------------------*/
 /* .cursos-containeR{} */
-.cursos-h2-container{
+.cursos-h2-container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 30vh;
 }
-.cursos-h2-container h2{
+
+.cursos-h2-container h2 {
     text-align: center;
     width: 26vw;
     height: 8vh;
@@ -362,26 +422,30 @@ main{
     font-size: 2.5em;
     color: var(--color3);
 }
-.container-cursos-carrusel{
+
+.container-cursos-carrusel {
     position: relative;
     height: 50vh;
     background-color: rgb(255, 255, 255);
     margin: 0 11%;
     overflow: hidden;
 }
-.cursos-carruseles{
+
+.cursos-carruseles {
     width: 200%;
     height: 100%;
     display: flex;
 }
-.cursos-slider-section{
+
+.cursos-slider-section {
     width: calc(94% / 6);
     height: 100%;
     background-size: cover;
     border-radius: 20px;
     margin: 0 1%;
 }
-.cursos-gradient{
+
+.cursos-gradient {
     width: 100%;
     height: 100%;
     background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.69));
@@ -389,14 +453,16 @@ main{
     display: flex;
     align-items: flex-end;
 }
-.cursos-content{
+
+.cursos-content {
     display: flex;
     flex-direction: column;
     height: 70%;
     width: 100%;
     border-radius: 0 0 15px 15px;
 }
-.cursos-content p{
+
+.cursos-content p {
     color: #fff;
     height: 50%;
     display: flex;
@@ -405,7 +471,8 @@ main{
     font-size: 1.5em;
     padding: 0 15%;
 }
-.cursos-button{
+
+.cursos-button {
     background-color: transparent;
     border: 1px solid transparent;
     text-decoration: none;
@@ -416,7 +483,8 @@ main{
     align-items: center;
     padding: 0 15%;
 }
-.cursos-button a{
+
+.cursos-button a {
     border: 2px solid #fff;
     text-decoration: none;
     color: #fff;
@@ -428,42 +496,51 @@ main{
     align-items: center;
     font-size: 1.2em;
 }
-.c-background1{
+
+.c-background1 {
     background-image: url(carreras-img/excel.jpg);
     background-position: center;
 }
-.c-background2{
+
+.c-background2 {
     background-image: url(carreras-img/py.jpg);
     background-position: center;
 }
-.c-background3{
+
+.c-background3 {
     background-image: url(carreras-img/java.jpg);
     background-position: center;
 }
-.c-background4{
+
+.c-background4 {
     background-image: url(carreras-img/html.jpg);
     background-position: center;
 }
-.c-background5{
+
+.c-background5 {
     background-image: url(carreras-img/game.jpg);
     background-position: center;
 }
-.c-background6{
+
+.c-background6 {
     background-image: url(carreras-img/pc.jpg);
     background-position: center;
 }
-.bx-left-arrow-alt{
+
+.bx-left-arrow-alt {
     color: var(--color1);
     background-color: #fff;
     border-radius: 50%;
-    box-shadow: 2px 1px 5px #000 ;
+    box-shadow: 2px 1px 5px #000;
 }
-.bx-right-arrow-alt{
+
+.bx-right-arrow-alt {
     color: var(--color1);
     background-color: #fff;
     border-radius: 50%;
-    box-shadow: -2px 1px 5px #000 ;
+    box-shadow: -2px 1px 5px #000;
 }
+
 /*-----------------------------------|
 |        WHATSAPP FLOTANTE           |
 |-----------------------------------*/
@@ -477,11 +554,13 @@ main{
     /* z-index: 1000; */
     padding: 10px 30px;
 }
+
 .whatsapp img {
     width: 500%;
     height: 100%;
-    
+
 }
+
 .wasap {
     display: none;
     position: absolute;
@@ -494,9 +573,11 @@ main{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     white-space: nowrap;
 }
+
 .whatsapp:hover .wasap {
     display: block;
 }
+
 /*------------------------------|
 |           CARRUSEL            |
 |-------------------------------*/
@@ -547,7 +628,8 @@ footer {
 .footer-iconoss img {
     max-height: 30px;
 }
-.footer-iconoss img:hover{
+
+.footer-iconoss img:hover {
     transform: scale(1.3);
 }
 
