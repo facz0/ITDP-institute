@@ -452,6 +452,13 @@ main{
     background-image: url(carreras-img/pc.jpg);
     background-position: center;
 }
+.btn-left, .btn-right{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+}
+.btn-left{left: 1px;}.btn-right{right: 1px;}
 .bx-left-arrow-alt{
     color: var(--color1);
     background-color: #fff;
@@ -498,7 +505,7 @@ main{
     display: block;
 }
 /*------------------------------|
-|           CARRUSEL            |
+|            FOOTER             |
 |-------------------------------*/
 footer {
     background-color: white;
