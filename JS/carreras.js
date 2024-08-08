@@ -83,3 +83,4 @@ let cargarCarreras = ()=>{
     sectionCarreras.innerHTML = html;
 }
 cargarCarreras();
+

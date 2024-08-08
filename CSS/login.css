@@ -3,8 +3,7 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url(https://img.freepik.com/vector-gratis/fondo-futurista-cibernetico-degradado_23-2149117429.jpg?w=1060&t=st=1722981171~exp=1722981771~hmac=0a6e1ec801d64180b46936e78817476d5862fd2aef428a1cb04b8dbac912178f)
-                no-repeat;
+    background: url("fondo-login.jpg")no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
@@ -40,6 +39,10 @@ body{
 .fondo .contenedor-form {
     width: 100%;
     padding: 40px;
+}
+
+.form-register{
+    margin: 0 10%;
 }
 
 .fondo .contenedor-form.login {
@@ -82,7 +85,7 @@ body{
 
 .contenedor-form h2 {
     font-size: 2em;
-    color: #F1EFEF;
+    color: #090f1d;
     text-align: center;
 }
 
@@ -103,7 +106,7 @@ body{
     font-weight: 600;
     pointer-events: none;
     transition: .4s;
-    color: #F1EFEF;
+    color: #090f1d;
 }
 
 .contenedor-input input:focus ~ label,
@@ -118,7 +121,7 @@ body{
     border: none;
     outline: none;
     font-size: 1em;
-    color: #F1EFEF;
+    color: #090f1d;
     padding: 0 35px 0 5px;
 }
 
