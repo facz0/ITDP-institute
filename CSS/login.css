@@ -34,11 +34,11 @@ body{
 }
 
 .fondo.active {
-    height: 455px;
+    height: 74vh;
 }
 
 .fondo .contenedor-form {
-    width: 100%;
+    width: 80%;
     padding: 40px;
 }
 
