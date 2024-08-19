@@ -1,72 +1,131 @@
 body {
-    font-family: sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
-  }
-  
-  /* Navigacion */
-  .pagina_institucional {
-    background-color: #333;
-    color: #fff;
-    width: 200px;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    padding: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  .pagina_institucional h1 {
-    margin-top: 0;
-    font-size: 24px;
-    font-weight: bold;
-  }
-  
-  .pagina_institucional ul {
-    list-style: none;
-    padding: 0;
-    margin-top: 20px;
-  }
-  
-  .pagina_institucional li {
-    margin-bottom: 10px;
-  }
-  
-  .pagina_institucional a {
-    text-decoration: none;
-    color: #fff;
-    display: block;
-    padding: 10px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .pagina_institucional a:hover {
-    background-color: #555;
-  }
-  
-  /* lo que se va a poner en el bienvenido */
-  .content {
-    margin-left: 220px;
-    padding: 20px;
-  }
-  
-  .content h1 {
-    margin-top: 0;
-    font-size: 32px;
-    font-weight: bold;
-  }
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
 
-  /* Footer por siaca ya estaria listo*/
-  footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-  }
+/*---------------------|
+|      NAVEGACION      |
+|---------------------*/
+.pagina_institucional {
+  background-color: #333;
+  color: #fff;
+  width: 200px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.pagina_institucional h1 {
+  margin-top: 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.pagina_institucional ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.pagina_institucional li {
+  margin-bottom: 10px;
+}
+
+.pagina_institucional a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.pagina_institucional a:hover {
+  background-color: #555;
+}
+
+/*-----------------------------------------|
+|     LO QUE SE PONE EN EL BIENVENIDO      |
+|-----------------------------------------*/
+.content {
+  margin-left: 220px;
+  padding: 20px;
+}
+
+.content h1 {
+  margin-top: 0;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+/*-----------------------------------------|
+|   XSIACA SI ES Q NECESITAMOS UN FOOTER   |
+|-----------------------------------------*/
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/*-----------------------------------------|
+|      CARRERAS SECTION (BIENVENIDOS)      |
+|-----------------------------------------*/
+
+.carreras_js {
+  padding: 1% 3%;
+}
+
+.carrera,
+.carrera2,
+.carrera3,
+.carrera4,
+.carrera5,
+.carrera6,
+.carrera7 {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease;
+  position: relative;/* para que se mantenga en los div y no se ponga a la izquierda de todo */
+}
+
+/*Para el cursor*/
+.carrera:hover,
+.carrera2:hover,
+.carrera3:hover,
+.carrera4:hover,
+.carrera5:hover,
+.carrera6:hover,
+.carrera7:hover {
+  background-color: #555;
+}
+
+/*Esto es para la linea es muy util en relidad*/
+.carrera:before,
+.carrera2:before,
+.carrera3:before,
+.carrera4:before,
+.carrera5:before,
+.carrera6:before,
+.carrera7:before {
+  content: "";
+  width: 5px;/* ancho de la línea */
+  height: 100%;/* alto de la línea */
+  position: absolute;
+  top: 0;/* posición superior */
+  left: 0;/* posición izquierda */
+  background-color: aqua;/* color de la línea */
+}
