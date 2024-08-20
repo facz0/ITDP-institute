@@ -163,18 +163,18 @@ main {
 
 .background1 {
 
-    background-image: url(bk1.jpg);
+    background-image: url(slider-img/bk1.jpg);
     background-size: cover;
 
 }
 
 .background2 {
-    background-image: url(bk2.jpg);
+    background-image: url(slider-img/bk2.jpg);
     background-size: cover;
 }
 
 .background3 {
-    background-image: url(bk3.jpg);
+    background-image: url(slider-img/bk3.jpg);
     background-size: cover;
 }
 
@@ -236,7 +236,7 @@ main {
 .carrera {
     width: var(--carrera_width);
     height: var(--carrera_height);
-    background-image: url(adminYsistemas.jpg);
+    background-image: url(carreras-img/adminYsistemas.jpg);
     background-size: var(--carrera_background-size);
     border-radius: var(--carrera_border-radius);
     margin: var(--carrera_margin);
@@ -244,7 +244,7 @@ main {
 
 /*Estilo dinámico para JA src = carreras.js*/
 .carrera2 {
-    background-image: url(computacion-informatica.jpg);
+    background-image: url(carreras-img/computacion-informatica.jpg);
     width: var(--carrera_width);
     height: var(--carrera_height);
     background-size: var(--carrera_background-size);
@@ -253,7 +253,7 @@ main {
 }
 
 .carrera3 {
-    background-image: url(electricidad-industrial.jpg);
+    background-image: url(carreras-img/electricidad-industrial.jpg);
     width: var(--carrera_width);
     height: var(--carrera_height);
     background-size: var(--carrera_background-size);
@@ -262,7 +262,7 @@ main {
 }
 
 .carrera4 {
-    background-image: url(dibujo-arquitectonico.jpg);
+    background-image: url(carreras-img/dibujo-arquitectonico.jpg);
     width: var(--carrera_width);
     height: var(--carrera_height);
     background-size: var(--carrera_background-size);
@@ -271,7 +271,7 @@ main {
 }
 
 .carrera5 {
-    background-image: url(mecanica-automotriz.jpg);
+    background-image: url(carreras-img/mecanica-automotriz.jpg);
     width: var(--carrera_width);
     height: var(--carrera_height);
     background-size: var(--carrera_background-size);
@@ -280,7 +280,7 @@ main {
 }
 
 .carrera6 {
-    background-image: url(graphic-design.jpg);
+    background-image: url(carreras-img/graphic-design.jpg);
     width: var(--carrera_width);
     height: var(--carrera_height);
     background-size: var(--carrera_background-size);
@@ -485,32 +485,32 @@ main {
 
 
 .c-background1 {
-    background-image: url(carreras-img/excel.jpg);
+    background-image: url(cursos-img/excel.jpg);
     background-position: center;
 }
 
 .c-background2 {
-    background-image: url(carreras-img/py.jpg);
+    background-image: url(cursos-img/py.jpg);
     background-position: center;
 }
 
 .c-background3 {
-    background-image: url(carreras-img/java.jpg);
+    background-image: url(cursos-img/java.jpg);
     background-position: center;
 }
 
 .c-background4 {
-    background-image: url(carreras-img/html.jpg);
+    background-image: url(cursos-img/html.jpg);
     background-position: center;
 }
 
 .c-background5 {
-    background-image: url(carreras-img/game.jpg);
+    background-image: url(cursos-img/game.jpg);
     background-position: center;
 }
 
 .c-background6 {
-    background-image: url(carreras-img/pc.jpg);
+    background-image: url(cursos-img/pc.jpg);
     background-position: center;
 }
 .cursos-btn-left, .cursos-btn-right{

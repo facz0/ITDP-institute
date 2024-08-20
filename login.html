@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="CSS/login.css">
     <!--iconos-->
     <script src="https://kit.fontawesome.com/6d29a0c53e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/alertify.min.css"/>
 </head>
 
 <body>
@@ -19,60 +20,61 @@
 
         <div class="contenedor-form login">
             <h2>Iniciar Sesión</h2>
-            <form action="#">
-                <form class="form-register" action="#">
+            <form>
+                <form class="form-register">
                     <div class="contenedor-input">
                         <span class="icono"><i class="fa-solid fa-user"></i></span>
-                        <input type="text" required>
-                        <label for="#">Nombre de usuario</label>
+                        <input type="text" id="username" name="username" required>
+                        <label for="username">Nombre de usuario</label>
                     </div>
 
                     <div class="contenedor-input">
                         <span class="icono"><i class="fa-solid fa-lock"></i></span>
-                        <input type="password" required>
-                        <label for="#">Contraseña</label>
+                        <input type="password" id="pass" name="pass" required>
+                        <label for="pass">Contraseña</label>
                     </div>
 
                     <div class="recordar">
                         <label for="#"><input type="checkbox">Recordar Sesión</label>
                     </div>
 
-                    <button type="submit" class="btn">Iniciar Sesión</button>
+                    <button type="button" id="btn-iniciar">Iniciar Sesión</button>
 
                     <div class="registrar">
                         <p>¿No tienes cuenta? <a href="#" class="registrar-link">Regístrate</a></p>
                     </div>
                 </form>
-        </div>
-        <div class="contenedor-form registrar">
+            </div>
+
+            <div class="contenedor-form registrar">
             <h2>Registrarse</h2>
             <div class="contenedor-input">
-                <input type="text" required>
-                <label for="#">Nombre completo</label>
+                <input type="text" id="name" name="name" required>
+                <label for="name">Nombre completo</label>
             </div>
 
             <div class="contenedor-input">
-                <input type="text" required>
-                <label for="#">Apellidos</label>
+                <input type="text" id="lastname" name="lastname" required>
+                <label for="lastname">Apellidos</label>
             </div>
 
             <div class="contenedor-input">
                 <span class="icono"><i class="fa-solid fa-envelope"></i></span>
-                <input type="email" required>
-                <label for="#">Email</label>
+                <input type="email" id="email" name="email" required>
+                <label for="email">Email</label>
             </div>
 
             <div class="contenedor-input">
                 <span class="icono"><i class="fa-solid fa-lock"></i></span>
-                <input type="password" required>
-                <label for="#">Contraseña</label>
+                <input type="password" id="r_pass" name="r_pass" required>
+                <label for="r_pass">Contraseña</label>
             </div>
 
             <div class="recordar">
                 <label for="#"><input type="checkbox">Acepte los terminos y condiciones</label>
             </div>
 
-            <button type="submit" class="btn">Registrarme</button>
+            <button type="button" id="btn-registrar">Registrarme</button>
 
             <div class="registrar">
                 <p>¿Tienes una cuenta? <a href="#" class="login-link">Iniciar Sesión</a></p>
@@ -81,6 +83,7 @@
         </div>
     </div>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/alertify.min.js"></script>
 <script src="JS/login.js"></script>
 
 </html>

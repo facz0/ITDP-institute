@@ -1,7 +1,20 @@
 {
-    "user":[
-        {
-            
-        }
-    ]
+  "Users": [
+    {
+      "id": "1",
+      "name": "-",
+      "lastname": "-",
+      "email": "admin@itdp.cl",
+      "user": "ADMIN",
+      "pass": "ItDp19#$"
+    },
+    {
+      "id": "6d31",
+      "name": "Fabrizio",
+      "lastname": "Cossío",
+      "email": "fabcos@outlook.com",
+      "user": "fabcos",
+      "pass": "1234567"
+    }
+  ]
 }
