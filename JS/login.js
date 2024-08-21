@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', fn_ob_datos)
 document.addEventListener('DOMContentLoaded', fn_mostrarDatos)
+document.addEventListener('DOMContentLoaded', fn_editar)
 const url = "http://localhost:3000/Users"
 //login
 let log_ob_user = document.getElementById("username")
@@ -13,6 +14,14 @@ let reg_ob_pass = document.getElementById("r_pass")
 let btnRegistrar = document.getElementById("btn-registrar")
 //tabla
 let tabla_datos = document.getElementById("tbody-admin")
+//ADMIN
+let edit_id = document.getElementById("txtId")
+let edit_Name = document.getElementById("txtNombre")
+let edit_Lastname = document.getElementById("txtApellido")
+let edit_email = document.getElementById("txtEmail")
+let edit_user = document.getElementById("txtUser")
+let edit_password = document.getElementById("txtPassword")
+let btnGuardar = document.getElementById("btnGuardar")
 
 //GET para validar login
 function fn_ob_datos(){
@@ -27,12 +36,16 @@ function fn_ob_datos(){
             res.forEach(function(i){
                 if(log_user===i.user && log_pass===i.pass){
                     alert("ingreso de sesión")
+                    localStorage.setItem("loggedName", i.name)
+                    localStorage.setItem("loggedLastName", i.lastname)
+                    location.href="bienvenido.html"
                     userFound=true
                 }
             })
             if(!userFound){
                 alert("Usuario o password incorrectos")
             }
+            
         }
         btnIniciar.addEventListener('click', fn_login)
     })
@@ -111,20 +124,7 @@ function fn_eliminar(indice, id){
 }
 
 
-function fn_editar(indice, id){
-    let editar_opciones= {
-        method : "PUT",
-        body: JSON.stringify({
-            "name": indice.name,
-            "lastname": indice.value,
-            "email": indice.value,
-            "user": indice.user,
-            "pass": indice.value
-        })
-    }
-    fetch(`${url}/${id}`,editar_opciones)
-    .then(res=>res.json())
-    .then(res=>{})
+function fn_editar(indice){
 
     let $id = tabla_datos.rows[indice].cells[0].innerHTML
     let $nom = tabla_datos.rows[indice].cells[1].innerHTML
@@ -132,8 +132,36 @@ function fn_editar(indice, id){
     let $mail = tabla_datos.rows[indice].cells[3].innerHTML 
     let $user = tabla_datos.rows[indice].cells[4].innerHTML 
     let $pass = tabla_datos.rows[indice].cells[5].innerHTML 
-
-
+    edit_id.value = $id
+    edit_Name.value = $nom
+    edit_Lastname.value = $ape
+    edit_email.value = $mail
+    edit_user.value = $user
+    edit_password.value = $pass
+    
+    function fn_guardar_edit(id){
+        let editar_opciones= {
+        method : "PUT",
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            "id": edit_id.value,
+            "name": edit_Name.value,
+            "lastname": edit_Lastname.value,
+            "email": edit_email.value,
+            "user": edit_user.value,
+            "pass": edit_password.value
+        })
+        }
+        fetch(`${url}/${id}`,editar_opciones)
+        .then(res=>res.json())
+        .then(res=>{})
+    }
+    btnGuardar.addEventListener('click', function() {
+        fn_guardar_edit($id);
+    });
+    
 }
 
 

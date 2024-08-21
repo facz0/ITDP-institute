@@ -1,68 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="CSS/bienvenido.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="CSS/bienvenido.css" />
 </head>
+
 <body>
-    <div class="container_logo">
-        <aside class="pagina_institucional">
-          <h1>ITDP</h1>
-          <img src="" alt=""><!--Falta el logo de la imagen -->
-          <hr>
-          <ul>
-            <li>
-              <i class="fas fa-home"></i>
-              <a href="#">Página de la institución</a>
-            </li>
-            <li>
-              <i class="fas fa-user-circle"></i>
-              <a href="#">NOMBRE X</a><!-- NOMBRE DEL USUARIO -->
-            </li>
-            <li>
-              <i class="fas fa-globe"></i>
-              <a href="#">Flujo de actividades</a>
-            </li>
-            <li>
-              <i class="fas fa-book"></i>
-              <a href="#">Cursos</a>
-            </li>
-            <li>
-              <i class="fas fa-calendar-alt"></i>
-              <a href="#">Calendario</a>
-            </li>
-            <li>
-              <i class="fas fa-envelope"></i>
-              <a href="#">Mensajes</a>
-            </li>
-            <li>
-              <i class="fas fa-clipboard-list"></i>
-              <a href="#">Calificaciones</a>
-            </li>
-            <li>
-              <i class="fas fa-tools"></i>
-              <a href="#">Herramientas</a>
-            </li>
-            <li>
-              <i class="fas fa-sign-out-alt"></i>
-              <a href="#">Cerrar sesión</a>
-            </li>
-          </ul>
-        </aside>
-        <main class="content">
-          <div><!--Aqui tiene que ir un logo o algo--></div>
-          <div><h1>Bienvenido</h1></div>
-          <div class="others">
-            <h2>Cursos</h2>
-          </div>
-          <!-- tiene que haber un boton para ingresar a esta pagina -->
-          <section class="carreras_js">
-            <!-- cursos que deben de ir con js -->
-           </section>
-        </main>
+  <div class="container_logo">
+    <aside class="pagina_institucional">
+      <h1>ITDP</h1>
+      <img src="" alt="" /><!--Falta el logo de la imagen -->
+      <hr/>
+      <ul>
+        <li>
+          <i class="fas fa-home"></i>
+          <a href="#">Página de la institución</a>
+        </li>
+        <li>
+          <i class="fas fa-user-circle"></i>
+          <a href="#" id="menu_a_nombre"></a><!-- NOMBRE DEL USUARIO -->
+        </li>
+        <li>
+          <i class="fas fa-globe"></i>
+          <a href="#">Flujo de actividades</a>
+        </li>
+        <li>
+          <i class="fas fa-book"></i>
+          <a href="#">Cursos</a>
+        </li>
+        <li>
+          <i class="fas fa-calendar-alt"></i>
+          <a href="#">Calendario</a>
+        </li>
+        <li>
+          <i class="fas fa-envelope"></i>
+          <a href="#">Mensajes</a>
+        </li>
+        <li>
+          <i class="fas fa-clipboard-list"></i>
+          <a href="#">Calificaciones</a>
+        </li>
+        <li>
+          <i class="fas fa-tools"></i>
+          <a href="#">Herramientas</a>
+        </li>
+        <li>
+          <i class="fas fa-sign-out-alt"></i>
+          <a href="#">Cerrar sesión</a>
+        </li>
+      </ul>
+    </aside>
+    <main class="content">
+      <div><!--Aqui tiene que ir un logo o algo--></div>
+      <div id="bienvenido_user"></div>
+      <div class="others">
+        <h2>Cursos</h2>
       </div>
+      <!-- tiene que haber un boton para ingresar a esta pagina -->
+      <section class="carreras_js">
+        <!-- cursos que deben de ir con js -->
+      </section>
+    </main>
+  </div>
 </body>
 <script src="JS/bienvenido.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", print_bienvenido)
+    function print_bienvenido(){
+      let b_usuario = document.getElementById("bienvenido_user")
+      let menu_nombre = document.getElementById("menu_a_nombre")
+      let log_name = localStorage.getItem("loggedName")
+      let log_lastName = localStorage.getItem("loggedLastName")
+      if(log_name){
+        b_usuario.innerHTML = `
+          <h1>Bienvenido ${log_name} ${log_lastName}</h1>
+        `
+      }
+      if(log_lastName){
+        menu_nombre.innerText = `
+          ${log_name} ${log_lastName}
+        `
+      }
+    }
+</script>
+
 </html>
