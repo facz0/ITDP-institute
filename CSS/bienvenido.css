@@ -101,53 +101,38 @@ body {
   padding: 1% 4%;
 }
 
-.carrera,
-.carrera2,
-.carrera3,
-.carrera4,
-.carrera5,
-.carrera6,
-.carrera7 {
+.carrera {
   height: 20vh;
   background-color: #333;
   color: #fff;
-  padding: 20px;
+  padding-left: 20px;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   margin-bottom: 10px;
   transition: background-color 0.3s ease;
   position: relative;/* para que se mantenga en los div y no se ponga a la izquierda de todo */
-  /* border-left: 5px solid aqua; */
+  border-left: 5px solid aqua; 
+  display: flex;
+  align-items: center;
 }
-
 /*Para el cursor*/
-.carrera:hover,
-.carrera2:hover,
-.carrera3:hover,
-.carrera4:hover,
-.carrera5:hover,
-.carrera6:hover,
-.carrera7:hover {
+.carrera:hover {
   background-color: #555;
 }
-
 /*Esto es para la linea es muy util en relidad*/
-.carrera:before,
-.carrera2:before,
-.carrera3:before,
-.carrera4:before,
-.carrera5:before,
-.carrera6:before,
-.carrera7:before {
-  content: "";
-  width: 5px;/* ancho de la línea */
-  height: 100%;/* alto de la línea */
-  position: absolute;
-  top: 0;/* posición superior */
-  left: 0;/* posición izquierda */
-  background-color: aqua;/* color de la línea */
-}
 
+.titulo_curso{
+  font-size: 1.7em;
+  padding-bottom: 5px;
+}
+.cod_curso{
+  font-size: 0.8em;
+  color: #929292;
+  padding-bottom: 5px;
+}
+.info_curso{
+  font-size: 1em;
+}
 /*-----------------------------------------|
 |   XSIACA SI ES Q NECESITAMOS UN FOOTER   |
 |-----------------------------------------*/
