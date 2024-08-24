@@ -1,19 +1,19 @@
 :root {
-    --color1: #00a5d4;
-    --color2: rgba(0, 0, 0, 0.274);
-    --color3: rgb(58, 58, 58);
-    --carrera_width: calc(94% / 3);
-    --carrera_height: calc(107vh / 2);
-    --carrera_background-size: cover;
-    --carrera_border-radius: 20px;
-    --carrera_margin: 0 1%;
+  --color1: #00a5d4;
+  --color2: rgba(0, 0, 0, 0.274);
+  --color3: rgb(58, 58, 58);
+  --carrera_width: calc(94% / 3);
+  --carrera_height: calc(107vh / 2);
+  --carrera_background-size: cover;
+  --carrera_border-radius: 20px;
+  --carrera_margin: 0 1%;
 }
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
 }
 
 /*-----------------------------------|
@@ -21,368 +21,366 @@
 |-----------------------------------*/
 
 nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: var(--color2);
-    color: white;
-    padding: 10px 20px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 100px;
-    box-sizing: border-box;
-    z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--color2);
+  color: white;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  box-sizing: border-box;
+  z-index: 1000;
 }
 .logo {
-    width: 14%;
+  width: 14%;
 }
 .logo img {
-    width: 100%;
+  width: 100%;
 }
 .menu {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-grow: 1;
-    justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
 }
 .menu li {
-    position: relative;
-    margin: 0 20px;
+  position: relative;
+  margin: 0 20px;
 }
 .menu li a {
-    color: white;
-    text-decoration: none;
-    padding: 8px 16px;
-    display: block;
+  color: white;
+  text-decoration: none;
+  padding: 8px 16px;
+  display: block;
 }
 .menu li a:hover {
-    background-color: gray;
-    border-radius: 10px;
+  background-color: gray;
+  border-radius: 10px;
 }
 .submenu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: rgb(94, 94, 94);
-    padding: 10px;
-    list-style-type: none;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-    z-index: 1000;
-    min-width: 500px;
-    box-sizing: border-box;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgb(94, 94, 94);
+  padding: 10px;
+  list-style-type: none;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  z-index: 1000;
+  min-width: 500px;
+  box-sizing: border-box;
 }
 .submenu li {
-    margin: 0 5px;
+  margin: 0 5px;
 }
 .submenu li a {
-    padding: 10px 20px;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
+  padding: 10px 20px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 .submenu li a:hover {
-    background-color: gray;
-    border-radius: 10px;
-    color: white;
+  background-color: gray;
+  border-radius: 10px;
+  color: white;
 }
 .menu li:hover .submenu {
-    display: inline-flex;
+  display: inline-flex;
 }
 .inscribete {
-    margin-left: auto;
+  margin-left: auto;
 }
 .inscribete button {
-    background-color: gray;
-    color: white;
-    /*border: none;
+  background-color: gray;
+  color: white;
+  /*border: none;
     width: 100%;
     padding: 10px 30px;
     cursor: pointer;
     font-size: 16px;
     border-radius: 20px;
     lo modifique por siaca aca esta el original*/
-    height: 45px;
-    border: none;
-    padding: 10px 25px;
-    border-radius: 25px;
-    cursor: pointer;
-    font-size: 1em;
-    font-weight: bold;
+  height: 45px;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: bold;
 }
 .inscribete button:hover {
-    background-color: var(--color1);
+  background-color: var(--color1);
 }
 main {
-    position: relative;
+  position: relative;
 }
 /*-----------------------------------|
 |           CARRUSEL HOME            |
 |-----------------------------------*/
 .container-carrusel {
-    position: relative;
-    width: 100%;
-    height: 97vh;
-    background-color: rgb(255, 255, 255);
-    overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 97vh;
+  background-color: rgb(255, 255, 255);
+  overflow: hidden;
 }
 
 .carruseles {
-    width: 300%;
-    height: 100%;
-    display: flex;
+  width: 300%;
+  height: 100%;
+  display: flex;
 }
 
 .slider-section {
-    width: calc(100% / 3);
-    height: 100%;
+  width: calc(100% / 3);
+  height: 100%;
 }
 
 .btn-left,
 .btn-right {
-    display: flex;
-    position: absolute;
-    top: 50%;
-    cursor: pointer;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
 }
 
 .btn-left {
-    left: 1px;
+  left: 1px;
 }
 
 .btn-right {
-    right: 1px;
+  right: 1px;
 }
 
 .background1 {
-
-    background-image: url(slider-img/bk1.jpg);
-    background-size: cover;
-
+  background-image: url(slider-img/bk1.jpg);
+  background-size: cover;
 }
 
 .background2 {
-    background-image: url(slider-img/bk2.jpg);
-    background-size: cover;
+  background-image: url(slider-img/bk2.jpg);
+  background-size: cover;
 }
 
 .background3 {
-    background-image: url(slider-img/bk3.jpg);
-    background-size: cover;
+  background-image: url(slider-img/bk3.jpg);
+  background-size: cover;
 }
 
 .gradient {
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to left, transparent, rgba(0, 0, 0, 0.69));
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to left, transparent, rgba(0, 0, 0, 0.69));
 }
 
 /*-----------------------------------|
 |         NOMBRE DEL ITDP            |
 |-----------------------------------*/
 .itdp-name-container {
-    margin-top: 10vh;
-    height: 40vh;
-    display: flex;
-    background-color: var(--color1);
+  margin-top: 10vh;
+  height: 40vh;
+  display: flex;
+  background-color: var(--color1);
 }
 
 .itdp-name {
-    margin: 5% auto 0 auto;
-    background-color: #ffffff;
-    height: 20vh;
-    width: 70%;
-    border-radius: 60px 60px 60px 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.6em;
-    color: rgb(58, 58, 58);
+  margin: 5% auto 0 auto;
+  background-color: #ffffff;
+  height: 20vh;
+  width: 70%;
+  border-radius: 60px 60px 60px 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6em;
+  color: rgb(58, 58, 58);
 }
 
 /*-----------------------------------|
 |         CARRERAS SECTION           |
 |-----------------------------------*/
 .carreras-h2-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
 }
 
 .carreras-h2-container h2 {
-    text-align: center;
-    width: 11vw;
-    height: 7vh;
-    border-bottom: 5px solid var(--color1);
-    font-size: 2em;
-    color: var(--color3);
+  text-align: center;
+  width: 11vw;
+  height: 7vh;
+  border-bottom: 5px solid var(--color1);
+  font-size: 2em;
+  color: var(--color3);
 }
 
 .carreras-content {
-    height: 114vh;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 12%;
+  height: 114vh;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 12%;
 }
 
 .carrera {
-    width: var(--carrera_width);
-    height: var(--carrera_height);
-    background-image: url(carreras-img/adminYsistemas.jpg);
-    background-size: var(--carrera_background-size);
-    border-radius: var(--carrera_border-radius);
-    margin: var(--carrera_margin);
+  width: var(--carrera_width);
+  height: var(--carrera_height);
+  background-image: url(carreras-img/adminYsistemas.jpg);
+  background-size: var(--carrera_background-size);
+  border-radius: var(--carrera_border-radius);
+  margin: var(--carrera_margin);
 }
 
 /*Estilo dinámico para JA src = carreras.js*/
 .carrera2 {
-    background-image: url(carreras-img/computacion-informatica.jpg);
-    width: var(--carrera_width);
-    height: var(--carrera_height);
-    background-size: var(--carrera_background-size);
-    border-radius: var(--carrera_border-radius);
-    margin: var(--carrera_margin);
+  background-image: url(carreras-img/computacion-informatica.jpg);
+  width: var(--carrera_width);
+  height: var(--carrera_height);
+  background-size: var(--carrera_background-size);
+  border-radius: var(--carrera_border-radius);
+  margin: var(--carrera_margin);
 }
 
 .carrera3 {
-    background-image: url(carreras-img/electricidad-industrial.jpg);
-    width: var(--carrera_width);
-    height: var(--carrera_height);
-    background-size: var(--carrera_background-size);
-    border-radius: var(--carrera_border-radius);
-    margin: var(--carrera_margin);
+  background-image: url(carreras-img/electricidad-industrial.jpg);
+  width: var(--carrera_width);
+  height: var(--carrera_height);
+  background-size: var(--carrera_background-size);
+  border-radius: var(--carrera_border-radius);
+  margin: var(--carrera_margin);
 }
 
 .carrera4 {
-    background-image: url(carreras-img/dibujo-arquitectonico.jpg);
-    width: var(--carrera_width);
-    height: var(--carrera_height);
-    background-size: var(--carrera_background-size);
-    border-radius: var(--carrera_border-radius);
-    margin: var(--carrera_margin);
+  background-image: url(carreras-img/dibujo-arquitectonico.jpg);
+  width: var(--carrera_width);
+  height: var(--carrera_height);
+  background-size: var(--carrera_background-size);
+  border-radius: var(--carrera_border-radius);
+  margin: var(--carrera_margin);
 }
 
 .carrera5 {
-    background-image: url(carreras-img/mecanica-automotriz.jpg);
-    width: var(--carrera_width);
-    height: var(--carrera_height);
-    background-size: var(--carrera_background-size);
-    border-radius: var(--carrera_border-radius);
-    margin: var(--carrera_margin);
+  background-image: url(carreras-img/mecanica-automotriz.jpg);
+  width: var(--carrera_width);
+  height: var(--carrera_height);
+  background-size: var(--carrera_background-size);
+  border-radius: var(--carrera_border-radius);
+  margin: var(--carrera_margin);
 }
 
 .carrera6 {
-    background-image: url(carreras-img/graphic-design.jpg);
-    width: var(--carrera_width);
-    height: var(--carrera_height);
-    background-size: var(--carrera_background-size);
-    border-radius: var(--carrera_border-radius);
-    margin: var(--carrera_margin);
+  background-image: url(carreras-img/graphic-design.jpg);
+  width: var(--carrera_width);
+  height: var(--carrera_height);
+  background-size: var(--carrera_background-size);
+  border-radius: var(--carrera_border-radius);
+  margin: var(--carrera_margin);
 }
 
 /*---------------------------------------*/
 .carrera-fade {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: flex-end;
-    background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.828));
-    border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.828));
+  border-radius: 20px;
 }
 
 .carrera-content {
-    display: flex;
-    flex-direction: column;
-    height: 70%;
-    width: 100%;
-    border-radius: 0 0 20px 20px;
-    /* background-color: #00a5d4; */
+  display: flex;
+  flex-direction: column;
+  height: 70%;
+  width: 100%;
+  border-radius: 0 0 20px 20px;
+  /* background-color: #00a5d4; */
 }
 
 .carrera-content p {
-    color: #fff;
-    height: 50%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-end;
-    font-size: 1.7em;
-    padding: 0 7%;
+  color: #fff;
+  height: 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  font-size: 1.7em;
+  padding: 0 7%;
 }
 
 .carrera-button {
-    background-color: transparent;
-    border: 1px solid transparent;
-    text-decoration: none;
-    height: 50%;
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 0 7%;
+  background-color: transparent;
+  border: 1px solid transparent;
+  text-decoration: none;
+  height: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 7%;
 }
 
 .carrera-button a {
-    border: 2px solid #fff;
-    text-decoration: none;
-    color: #fff;
-    border-radius: 30px;
-    width: 50%;
-    height: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.4em;
+  border: 2px solid #fff;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 30px;
+  width: 50%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4em;
 }
 
 .carrera-button a:hover {
-    background-color: var(--color1);
-    transition: .6s;
+  background-color: var(--color1);
+  transition: 0.6s;
 }
 
 /*boton de conoce más*/
 .conoce-mas {
-    height: 20vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .conoce-mas button {
-    border: 3px solid var(--color3);
-    background-color: transparent;
-    width: 20%;
-    height: 40%;
-    border-radius: 30px;
-    display: flex;
-    align-items: center;
+  border: 3px solid var(--color3);
+  background-color: transparent;
+  width: 20%;
+  height: 40%;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
 }
 
 .conoce-mas button:hover {
-    background-color: var(--color3);
-    border: 3px solid #fff;
+  background-color: var(--color3);
+  border: 3px solid #fff;
 }
 
 .conoce-mas button a {
-    text-decoration: none;
-    color: var(--color3);
-    font-size: 1.6em;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  text-decoration: none;
+  color: var(--color3);
+  font-size: 1.6em;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .conoce-mas button a:hover {
-    color: white;
+  color: white;
 }
 
 /*-----------------------------------|
@@ -390,245 +388,249 @@ main {
 |-----------------------------------*/
 /* .cursos-containeR{} */
 .cursos-h2-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
 }
 
 .cursos-h2-container h2 {
-    text-align: center;
-    width: 26vw;
-    height: 8vh;
-    border-bottom: 5px solid var(--color1);
-    font-size: 2.5em;
-    color: var(--color3);
+  text-align: center;
+  width: 26vw;
+  height: 8vh;
+  border-bottom: 5px solid var(--color1);
+  font-size: 2.5em;
+  color: var(--color3);
 }
 
 .container-cursos-carrusel {
-    position: relative;
-    height: 50vh;
-    background-color: rgb(255, 255, 255);
-    margin: 0 11%;
-    overflow: hidden;
+  position: relative;
+  height: 50vh;
+  background-color: rgb(255, 255, 255);
+  margin: 0 11%;
+  overflow: hidden;
 }
 
 .cursos-carruseles {
-    width: 200%;
-    height: 100%;
-    display: flex;
+  width: 200%;
+  height: 100%;
+  display: flex;
 }
 
 .cursos-slider-section {
-    width: calc(94% / 6);
-    height: 100%;
-    background-size: cover;
-    border-radius: 20px;
-    margin: 0 1%;
+  width: calc(94% / 6);
+  height: 100%;
+  background-size: cover;
+  border-radius: 20px;
+  margin: 0 1%;
 }
 
 .cursos-gradient {
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.99));
-    border-radius: 15px;
-    display: flex;
-    align-items: flex-end;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.99));
+  border-radius: 15px;
+  display: flex;
+  align-items: flex-end;
 }
 
 .cursos-content {
-    display: flex;
-    flex-direction: column;
-    height: 70%;
-    width: 100%;
-    border-radius: 0 0 15px 15px;
+  display: flex;
+  flex-direction: column;
+  height: 70%;
+  width: 100%;
+  border-radius: 0 0 15px 15px;
 }
 
 .cursos-content p {
-    color: #fff;
-    height: 50%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-end;
-    font-size: 1.5em;
-    padding: 0 15%;
+  color: #fff;
+  height: 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  font-size: 1.5em;
+  padding: 0 15%;
 }
 
 .cursos-button {
-    background-color: transparent;
-    border: 1px solid transparent;
-    text-decoration: none;
-    height: 50%;
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 0 15%;
+  background-color: transparent;
+  border: 1px solid transparent;
+  text-decoration: none;
+  height: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 15%;
 }
 
 .cursos-button a {
-    border: 2px solid #fff;
-    text-decoration: none;
-    color: #fff;
-    border-radius: 30px;
-    width: 60%;
-    height: 45%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.2em;
+  border: 2px solid #fff;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 30px;
+  width: 60%;
+  height: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
 }
-.cursos-button a:hover{
-    background-color: var(--color1);
-    transition: .6s;
+.cursos-button a:hover {
+  background-color: var(--color1);
+  transition: 0.6s;
 }
-
 
 .c-background1 {
-    background-image: url(cursos-img/excel.jpg);
-    background-position: center;
+  background-image: url(cursos-img/excel.jpg);
+  background-position: center;
 }
 
 .c-background2 {
-    background-image: url(cursos-img/py.jpg);
-    background-position: center;
+  background-image: url(cursos-img/py.jpg);
+  background-position: center;
 }
 
 .c-background3 {
-    background-image: url(cursos-img/java.jpg);
-    background-position: center;
+  background-image: url(cursos-img/java.jpg);
+  background-position: center;
 }
 
 .c-background4 {
-    background-image: url(cursos-img/html.jpg);
-    background-position: center;
+  background-image: url(cursos-img/html.jpg);
+  background-position: center;
 }
 
 .c-background5 {
-    background-image: url(cursos-img/game.jpg);
-    background-position: center;
+  background-image: url(cursos-img/game.jpg);
+  background-position: center;
 }
 
 .c-background6 {
-    background-image: url(cursos-img/pc.jpg);
-    background-position: center;
+  background-image: url(cursos-img/pc.jpg);
+  background-position: center;
 }
-.cursos-btn-left, .cursos-btn-right{
-    display: flex;
-    position: absolute;
-    top: 50%;
-    cursor: pointer;
+.cursos-btn-left,
+.cursos-btn-right {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
 }
-.cursos-btn-left{left: 1px;}.cursos-btn-right{right: 1px;}
+.cursos-btn-left {
+  left: 1px;
+}
+.cursos-btn-right {
+  right: 1px;
+}
 .bx-left-arrow-alt {
-    color: var(--color1);
-    background-color: #fff;
-    border-radius: 50%;
-    box-shadow: 2px 1px 5px #000;
+  color: var(--color1);
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 2px 1px 5px #000;
 }
 
 .bx-right-arrow-alt {
-    color: var(--color1);
-    background-color: #fff;
-    border-radius: 50%;
-    box-shadow: -2px 1px 5px #000;
+  color: var(--color1);
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: -2px 1px 5px #000;
 }
-
 
 /*-----------------------------------|
 |        WHATSAPP FLOTANTE           |
 |-----------------------------------*/
 .whatsapp {
-    position: fixed;
-    bottom: 20px;
-    right: 1%;
-    width: 60px;
-    height: 60px;
-    cursor: pointer;
-    z-index: 10;
+  position: fixed;
+  bottom: 20px;
+  right: 1%;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  z-index: 10;
 }
 
 .whatsapp img {
-    width: 100%;
+  width: 100%;
 }
 
 .wasap {
-    display: none;
-    position: absolute;
-    bottom: 60px;
-    right: 10px;
-    background-color: #32d851;
-    color: #fff;
-    padding: 5px 10px;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    white-space: nowrap;
+  display: none;
+  position: absolute;
+  bottom: 60px;
+  right: 10px;
+  background-color: #32d851;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  white-space: nowrap;
 }
 
 .whatsapp:hover .wasap {
-    display: block;
+  display: block;
 }
 
 /*------------------------------|
 |            FOOTER             |
 |-------------------------------*/
 footer {
-    background-color: white;
-    color: black;
-    padding: 20px 0;
-    margin-top: 40vh;
+  background-color: white;
+  color: black;
+  padding: 20px 0;
+  margin-top: 40vh;
 }
 
 .footer-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: flex-start;
-    max-width: 1200px;
-    margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .footer-logo img,
 .footer-logos img {
-    max-height: 50px;
-    margin-bottom: 20px;
+  max-height: 50px;
+  margin-bottom: 20px;
 }
 
 .footer-links ul {
-    list-style: none;
+  list-style: none;
 }
 
 .footer-links ul li {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .footer-links ul li a {
-    color: black;
-    text-decoration: none;
-    transition: color 0.3s;
+  color: black;
+  text-decoration: none;
+  transition: color 0.3s;
 }
 
 .footer-links ul li a:hover {
-    color: brown;
+  color: brown;
 }
 
 .footer-iconoss a {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 .footer-iconoss img {
-    max-height: 30px;
+  max-height: 30px;
 }
 
 .footer-iconoss img:hover {
-    transform: scale(1.3);
+  transform: scale(1.3);
 }
 
 .footer-bottom {
-    text-align: center;
-    margin-top: 20px;
+  text-align: center;
+  margin-top: 20px;
 }
 
 .footer-bottom p {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 }

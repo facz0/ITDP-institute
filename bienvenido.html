@@ -6,14 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
   <link rel="stylesheet" href="CSS/bienvenido.css" />
+  <script src="https://kit.fontawesome.com/6d29a0c53e.js" crossorigin="anonymous"></script>
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous"> -->
 </head>
 
 <body>
-  <div class="container_logo">
+  <div class="aula-virtual">
     <aside class="pagina_institucional">
-      <h1>ITDP</h1>
-      <img src="" alt="" /><!--Falta el logo de la imagen -->
-      <hr/>
+      <div class="pagina_institucional-cabecera">
+        <img src="images/logo_solo.png" alt="logo">
+        <h2>ITDP</h2>
+      </div>
       <ul>
         <li>
           <i class="fas fa-home"></i>
@@ -21,7 +24,7 @@
         </li>
         <li>
           <i class="fas fa-user-circle"></i>
-          <a href="#" id="menu_a_nombre"></a><!-- NOMBRE DEL USUARIO -->
+          <a href="#" id="menu_a_nombre"></a>
         </li>
         <li>
           <i class="fas fa-globe"></i>
@@ -54,17 +57,17 @@
       </ul>
     </aside>
     <main class="content">
-      <div><!--Aqui tiene que ir un logo o algo--></div>
       <div id="bienvenido_user"></div>
       <div class="others">
-        <h2>Cursos</h2>
+        <h2>Cursos:</h2>
       </div>
       <!-- tiene que haber un boton para ingresar a esta pagina -->
       <section class="carreras_js">
-        <!-- cursos que deben de ir con js -->
-      </section>
+        <!-- cursos que deben de ir con js --> 
+      </section>  
     </main>
   </div>
+  
 </body>
 <script src="JS/bienvenido.js"></script>
 <script>
@@ -80,9 +83,7 @@
         `
       }
       if(log_lastName){
-        menu_nombre.innerText = `
-          ${log_name} ${log_lastName}
-        `
+        menu_nombre.innerText = `${log_name} ${log_lastName}`
       }
     }
 </script>

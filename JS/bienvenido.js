@@ -3,43 +3,50 @@ let c1 = {
     "class1": "carrera",
     "class2": "carrera-fade",
     "class3": "carrera-content",
-    "title": "Administración y Sistemas"
+    "title": "Administración y Sistemas",
+    "profesor": "Laura Méndez"
 }
 let c2 = {
     "class1": "carrera2",
     "class2": "carrera-fade",
     "class3": "carrera-content",
-    "title": "Computación e informática"
+    "title": "Computación e informática",
+    "profesor": "Carlos Ruiz"
 }
 let c3 = {
     "class1": "carrera3",
     "class2": "carrera-fade",
     "class3": "carrera-content",
-    "title": "Electricidad Industrial"
+    "title": "Electricidad Industrial",
+    "profesor": "Mariana López"
 }
 let c4 = {
     "class1": "carrera4",
     "class2": "carrera-fade",
     "class3": "carrera-content",
-    "title": "Dibujo Arquitectónico"
+    "title": "Dibujo Arquitectónico",
+    "profesor": "Andrés García"
 }
 let c5 = {
     "class1": "carrera5",
     "class2": "carrera-fade",
     "class3": "carrera-content",
-    "title": "Mecánica Automotríz"
+    "title": "Mecánica Automotríz",
+    "profesor": "Sofía Fernández"
 }
 let c6 = {
     "class1": "carrera6",
     "class2": "carrera-fade",
     "class3": "carrera-content",
-    "title": "Diseño Gráfico"
+    "title": "Diseño Gráfico",
+    "profesor": "Ricardo Torres"
 }
 let c7 = {
-    "class1": "carrera6",
+    "class1": "carrera7",
     "class2": "carrera-fade",
     "class3": "carrera-content",
-    "title": "Ingeniería Electrónica"
+    "title": "Ingeniería Electrónica",
+    "profesor": "Patricia Morales"
 }
 carreras.push(c1);
 carreras.push(c2);
@@ -59,7 +66,8 @@ let cargarCarreras = ()=>{
         <section class="${i.class1}">
             <div class="${i.class2}">
                 <div class="${i.class3}">
-                    <p>${i.title}</p>
+                    <h3>${i.title}</h3>
+                    <p>Profesor: ${i.profesor}</p>
                 </div>
             </div>
         </section>

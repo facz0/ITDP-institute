@@ -23,6 +23,23 @@
       "email": "Promero@gmail.com",
       "user": "Promerof",
       "pass": "123789yu"
+    },
+    {
+      "id": "1b41",
+      "name": "Diego",
+      "lastname": "Medina",
+      "email": "diegomedina@gmail.com",
+      "user": "diegomedina",
+      "pass": "asdfghjkl"
+    },
+    {
+      "id": "b17c",
+      "name": "roberto",
+      "lastname": "clemente",
+      "email": "rcle@gfmil.com",
+      "user": "rcle",
+      "pass": "123456789",
+      "cursos": {}
     }
   ]
 }

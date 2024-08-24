@@ -33,19 +33,22 @@ function fn_ob_datos(){
             let log_user = log_ob_user.value
             let log_pass = log_ob_pass.value
             let userFound = false
-            res.forEach(function(i){
-                if(log_user===i.user && log_pass===i.pass){
-                    alert("ingreso de sesión")
-                    localStorage.setItem("loggedName", i.name)
-                    localStorage.setItem("loggedLastName", i.lastname)
-                    location.href="bienvenido.html"
-                    userFound=true
+            res.forEach(function(i) {
+                if (log_user === i.user && log_pass === i.pass) {
+                    if (i.user === "ADMIN") {
+                        location.href = "perfil_admin.html";
+                    } else {
+                        alert("Ingreso de sesión");
+                        localStorage.setItem("loggedName", i.name);
+                        localStorage.setItem("loggedLastName", i.lastname);
+                        location.href = "bienvenido.html";
+                    }
+                    userFound = true;
                 }
-            })
-            if(!userFound){
-                alert("Usuario o password incorrectos")
+            });
+            if (!userFound) {
+                alert("Usuario o contraseña incorrectos");
             }
-            
         }
         btnIniciar.addEventListener('click', fn_login)
     })
@@ -65,7 +68,8 @@ function fn_registrar(){
             "lastname": reg_ob_lastname.value,
             "email": reg_ob_email.value,
             "user": reg_ob_user,
-            "pass": reg_ob_pass.value
+            "pass": reg_ob_pass.value,
+            "cursos":{}
         })
     }
     fetch(url, opciones)
