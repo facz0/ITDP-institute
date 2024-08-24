@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+    <!-------------------------------|
+     |       cabeza de la pag        |
+     |------------------------------->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/logoFull.png" alt="Logo">
+            </div>
+            <ul class="menu">
+                <li class="dropdown">
+                    <a href="#">CARRERAS</a>
+                    <ul class="submenu">
+                        <li><a href="#"><i class="fa-solid fa-laptop-code fa-2xl"></i>CARRERAS DE TECNOLOGÍAS DE LA
+                                INFORMACIÓN</a></li>
+                        <li><a href="#"><i class='bx bx-hard-hat bx-lg'></i>CARRERAS DE INGENIERÍA</a></li>
+                        <li><a href="#"><i class="fa-solid fa-pen-nib fa-2xl"></i>CARRERAS DE DISEÑO</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">CURSOS CORTOS</a>
+                    <ul class="submenu">
+                        <li><a href="#"><i class="fa-regular fa-file-excel fa-2xl"></i>Excel profesional</a></li>
+                        <li><a href="#"><i class='bx bxl-python bx-lg'></i>Python</a></li>
+                        <li><a href="#"><i class='bx bxl-java bx-lg'></i>Java</a></li>
+                        <li><a href="#"><i class='bx bxl-html5 bx-lg'></i>HTML y CSS</a></li>
+                        <li><a href="#"><i class="fa-solid fa-gamepad fa-2xl"></i>Creación de vedeojuegos</a></li>
+                        <li><a href="#"><i class='bx bx-desktop bx-lg'></i>Reparación de PC</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">CONOCE MÁS</a>
+                </li>
+            </ul>
+            <div class="inscribete">
+                <button>Inscríbete</button>
+            </div>
+            <div class="inscribete">
+                <button class="btn" onclick="window.location.href='login.html'">Aula Virtual</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-------------------------------|
+     |           cursos ING          |
+     |------------------------------->
+
+    <!------------------------------------------------------>
+    <div class="importancia">
+        <h2 class="impor">¿Por que deberías estudiar en el Intituto ITDP?</h2><br>
+        <p class="tancia">
+            Estudiar en el Instituto ITDP es una excelente opción porque ofrece cursos especializados y actualizados
+            en áreas clave como Excel Profesional, Creación de Videojuegos, HTML y CSS, Java para desarrolladores,
+            Reparación de PC, y Python para principiantes. Estos cursos están diseñados para brindarte habilidades
+            prácticas
+            y conocimientos avanzados que son altamente valorados en el mercado laboral. Con instructores expertos,
+            recursos
+            modernos y un enfoque en la formación integral, ITDP te preparará eficazmente para destacarte en tu carrera
+            profesional.</p>
+    </div><br><br>
+    <!-------------------------------|
+     |         Formulario            |
+     |------------------------------->
+    <div class="formulario">
+        <div class="form-section">
+            <h2>Solicita más Información (no sabia que ponerle jaja)</h2>
+            <form>
+                <div class="form-group">
+                    <label for="nombre">Nombres:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre">
+                </div>
+                <div class="form-group">
+                    <label for="apellido-paterno">Apellido Paterno:</label>
+                    <input type="text" id="apellido-paterno" name="apellido-paterno"
+                        placeholder="Ingrese su apellido paterno">
+                </div>
+                <div class="form-group">
+                    <label for="apellido-materno">Apellido Materno:</label>
+                    <input type="text" id="apellido-materno" name="apellido-materno"
+                        placeholder="Ingrese su apellido materno">
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="Ingrese su correo electrónico">
+                </div>
+                <div class="form-group">
+                    <label for="documento">Nro. de Documento:</label>
+                    <input type="text" id="documento" name="documento" placeholder="Ingrese su número de documento">
+                </div>
+                <div class="form-group">
+                    <label for="celular">Celular:</label>
+                    <input type="tel" id="celular" name="celular" placeholder="Ingrese su número de celular">
+                </div>
+                <div class="form-group">
+                    <label for="sede">Seleccione una sede:</label>
+                    <select id="sede" name="sede">
+                        <option value="sede0"></option>
+                        <option value="sede1">Lima centro</option>
+                        <option value="sede2">Miraflores</option>
+                        <option value="sede3">Comas</option>
+                    </select>
+                </div>
+                <button type="submit">ENVIAR</button>
+            </form>
+        </div>
+        <div class="imagen_form">
+            <img src="images/formulario.jpg" alt="imagen de una persona en una laptop">
+        </div>
+    </div>
+
+    <!-------------------------------|
+     |           FOOTER              |
+     |------------------------------->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="images/logoFull.png" alt="ITDP">
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#">Mapa de sitio</a></li>
+                    <li><a href="#">Políticas de privacidad</a></li>
+                    <li><a href="#">Preguntas frecuentes</a></li>
+                    <li><a href="#">Transparencia institucional</a></li>
+                    <li><a href="#">Protocolo COVID-19</a></li>
+                    <li><a href="#">Contáctanos</a></li>
+                </ul>
+            </div><br>
+            <div class="footer-logos">
+                <img src="iconos/UPC.png" alt="Logo 1">
+                <img src="iconos/U-LIMA.png" alt="Logo 2">
+                <img src="iconos/UTP.png" alt="Logo 3">
+            </div>
+            <div class="footer-iconoss">
+                <a href="#"><img src="iconos/facebook-square-logo-72.png" alt="Facebook"></a>
+                <a href="#"><img src="iconos/youtube-logo-96.png" alt="YouTube"></a>
+                <a href="#"><img src="iconos/linkedin-square-logo-96.png" alt="LinkedIn"></a>
+                <a href="#"><img src="iconos/instagram-logo-96.png" alt="Instagram"></a>
+                <a href="#"><img src="iconos/twitter-logo-96.png" alt="Twitter"></a>
+            </div>
+            <div class="footer-bottom">
+                <p>INSTITUTO TECNOLOGICO DEL PERÚ - 2024</p>
+                <p>JR. URUGUAY 514 LIMA</p>
+                <p>TODOS LOS DERECHOS RESERVADOS</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
