@@ -701,18 +701,26 @@ footer {
   padding-left: 5%;
 }
 .curso-container-impar-img{
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* padding: 5% 0 1% 0; */
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* padding: 5% 0 1% 0; */
+}
+.html_css_img{
+  height: 94%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  padding: 8% 0 0 0;
 }
 .curso-content-impar-img{
-    height: 90%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 20px;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
 }
 .curso-img-impar{
   border: 2px solid black;
