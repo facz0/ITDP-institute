@@ -715,12 +715,31 @@ footer {
   border-radius: 20px;
   padding: 8% 0 0 0;
 }
-.curso-content-impar-img{
-  height: 90%;
+.curso-content-impar-img-1{
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 20px;
+  padding: 14% 10% 0% 3%;
+}
+
+.curso-content-impar-img-2{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  padding: 15% 1% 2% 1%;
+}
+
+.curso-content-impar-img-3{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  padding: 15% 1% 2% 1%;
 }
 .curso-img-impar{
   border: 2px solid black;
@@ -728,7 +747,92 @@ footer {
   border-radius: 10px;
 }
 
+/*-----------par---------------------------------------------*/
 
+.curso-container-par {
+  display: flex;
+  width: 90%;
+  height: 75vh;
+  margin: 7% auto;
+}
+
+.curso-container-par-img{
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.curso-content-par-img-1{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  padding: 15% 1% 2% 1%;
+}
+
+.curso-content-par-img-2{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  padding: 15% 1% 2% 1%;
+}
+
+.curso-content-par-img-3{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  padding: 15% 1% 2% 1%;
+}
+
+.curso-img-par{
+  border: 2px solid black;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.curso-container-par-text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.curso-content-par-text-title{
+  height: 15%;
+  display: flex;
+  align-items: center;
+  border-left: 5px solid var(--color2);
+  padding: 0 0 0 3%;
+  font-size: 1.4em;
+}
+
+.curso-content-par-text-parrafo{
+  margin-top: 2%;
+  height: 83%;
+  display: flex;
+  flex-direction: column;
+  padding: 3% 0 0 0;
+  background-color: var(--color2);
+  color: #fff;
+  font-family: "League Spartan", sans-serif;
+  font-size: 1.2em;
+  line-height: 1.2;
+  border-radius: 10px;
+}
+
+.curso-content-par-text-parrafo-p{
+  padding: 0 3% 0 3%;
+  margin-bottom: 3%;
+}
+
+.curso-content-par-text-parrafo-ul{
+  padding-left: 5%;
+}
 
 
 
