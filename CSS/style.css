@@ -491,6 +491,7 @@ main {
   align-items: center;
   font-size: 1.2em;
 }
+
 .cursos-button a:hover {
   background-color: var(--color1);
   transition: 0.6s;
@@ -528,18 +529,18 @@ main {
 
 .cursos-btn-left,
 .cursos-btn-right {
-    display: flex;
-    position: absolute;
-    top: 50%;
-    cursor: pointer;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
 }
 
 .cursos-btn-left {
-    left: 1px;
+  left: 1px;
 }
 
 .cursos-btn-right {
-    right: 1px;
+  right: 1px;
 }
 
 .bx-left-arrow-alt {
@@ -594,10 +595,10 @@ main {
 |            FOOTER             |
 |-------------------------------*/
 footer {
-    background-color: white;
-    color: black;
-    padding: 20px 0;
-    margin-top: 10vh;
+  background-color: white;
+  color: black;
+  padding: 20px 0;
+  margin-top: 10vh;
 }
 
 .footer-container {
@@ -651,7 +652,7 @@ footer {
 }
 
 .footer-bottom p {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 
 /*---------------------------------|
@@ -660,6 +661,7 @@ footer {
 .curso-main {
   margin-top: 19vh;
 }
+
 /*-----------------------------------*/
 .curso-container-impar {
   display: flex;
@@ -667,12 +669,14 @@ footer {
   height: 75vh;
   margin: 7% auto;
 }
+
 .curso-container-impar-text {
   width: 50%;
   display: flex;
   flex-direction: column;
 }
-.curso-content-impar-text-title{
+
+.curso-content-impar-text-title {
   height: 15%;
   display: flex;
   align-items: center;
@@ -680,7 +684,8 @@ footer {
   padding: 0 0 0 3%;
   font-size: 1.4em;
 }
-.curso-content-impar-text-parrafo{
+
+.curso-content-impar-text-parrafo {
   margin-top: 2%;
   height: 83%;
   display: flex;
@@ -693,21 +698,25 @@ footer {
   line-height: 1.2;
   border-radius: 10px;
 }
-.curso-content-impar-text-parrafo-p{
+
+.curso-content-impar-text-parrafo-p {
   padding: 0 3% 0 3%;
   margin-bottom: 3%;
 }
-.curso-content-impar-text-parrafo-ul{
+
+.curso-content-impar-text-parrafo-ul {
   padding-left: 5%;
 }
-.curso-container-impar-img{
+
+.curso-container-impar-img {
   width: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   /* padding: 5% 0 1% 0; */
 }
-.html_css_img{
+
+.html_css_img {
   height: 94%;
   display: flex;
   align-items: center;
@@ -715,7 +724,8 @@ footer {
   border-radius: 20px;
   padding: 8% 0 0 0;
 }
-.curso-content-impar-img-1{
+
+.curso-content-impar-img-1 {
   height: 100%;
   display: flex;
   align-items: center;
@@ -724,7 +734,7 @@ footer {
   padding: 14% 10% 0% 3%;
 }
 
-.curso-content-impar-img-2{
+.curso-content-impar-img-2 {
   height: 100%;
   display: flex;
   align-items: center;
@@ -733,7 +743,7 @@ footer {
   padding: 15% 1% 2% 1%;
 }
 
-.curso-content-impar-img-3{
+.curso-content-impar-img-3 {
   height: 100%;
   display: flex;
   align-items: center;
@@ -741,7 +751,8 @@ footer {
   border-radius: 20px;
   padding: 15% 1% 2% 1%;
 }
-.curso-img-impar{
+
+.curso-img-impar {
   border: 2px solid black;
   height: 100%;
   border-radius: 10px;
@@ -756,14 +767,14 @@ footer {
   margin: 7% auto;
 }
 
-.curso-container-par-img{
+.curso-container-par-img {
   width: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.curso-content-par-img-1{
+.curso-content-par-img-1 {
   height: 100%;
   display: flex;
   align-items: center;
@@ -772,7 +783,7 @@ footer {
   padding: 15% 1% 2% 1%;
 }
 
-.curso-content-par-img-2{
+.curso-content-par-img-2 {
   height: 100%;
   display: flex;
   align-items: center;
@@ -781,7 +792,7 @@ footer {
   padding: 15% 1% 2% 1%;
 }
 
-.curso-content-par-img-3{
+.curso-content-par-img-3 {
   height: 100%;
   display: flex;
   align-items: center;
@@ -790,7 +801,7 @@ footer {
   padding: 15% 1% 2% 1%;
 }
 
-.curso-img-par{
+.curso-img-par {
   border: 2px solid black;
   height: 100%;
   border-radius: 10px;
@@ -802,7 +813,7 @@ footer {
   flex-direction: column;
 }
 
-.curso-content-par-text-title{
+.curso-content-par-text-title {
   height: 15%;
   display: flex;
   align-items: center;
@@ -811,7 +822,7 @@ footer {
   font-size: 1.4em;
 }
 
-.curso-content-par-text-parrafo{
+.curso-content-par-text-parrafo {
   margin-top: 2%;
   height: 83%;
   display: flex;
@@ -825,12 +836,12 @@ footer {
   border-radius: 10px;
 }
 
-.curso-content-par-text-parrafo-p{
+.curso-content-par-text-parrafo-p {
   padding: 0 3% 0 3%;
   margin-bottom: 3%;
 }
 
-.curso-content-par-text-parrafo-ul{
+.curso-content-par-text-parrafo-ul {
   padding-left: 5%;
 }
 
@@ -839,13 +850,13 @@ footer {
 
 /* esto es otra cosa sobre el xq deberias estudiar aca */
 .importancia {
-    text-align: center;
-    margin: 0 auto;
-    max-width: 80%;
-    background-color: var(--color2);
-    border: 1px solid var(--color3);
-    padding: 20px;
-    border-radius: 10px;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 80%;
+  background-color: var(--color2);
+  border: 1px solid var(--color3);
+  padding: 20px;
+  border-radius: 10px;
 }
 
 /*-----------------------|
@@ -853,89 +864,276 @@ footer {
 |-----------------------*/
 
 .formulario {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    padding: 20px;
-    background-color: var(--color1);
-    border-radius: 5px;
-    border: 2px solid var(--color2);
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 20px;
+  background-color: var(--color1);
+  border-radius: 5px;
+  border: 2px solid var(--color2);
+  align-items: center;
 }
 
 .form-seccion {
-    width: 300px;
+  width: 300px;
 }
 
 .form-seccion h2 {
-    color: #333;
-    margin-bottom: 20px;
+  color: #333;
+  margin-bottom: 20px;
 }
 
 .form-group {
-    margin-bottom: 5%;
+  margin-bottom: 5%;
 }
 
 label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
 }
 
 input[type="text"],
 input[type="email"],
 input[type="tel"] {
-    width: 100%;
-    padding: 4%;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
+  width: 100%;
+  padding: 4%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
 select {
-    width: 100%;
-    padding: 4%;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    appearance: none;
-    /*para que no aparesca la fecha para deslizar */
-    -webkit-appearance: none;
-    /*para que no aparesca la fecha para deslizar */
-    -moz-appearance: none;
-    /*para que no aparesca la fecha para deslizar */
+  width: 100%;
+  padding: 4%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  appearance: none;
+  /*para que no aparesca la fecha para deslizar */
+  -webkit-appearance: none;
+  /*para que no aparesca la fecha para deslizar */
+  -moz-appearance: none;
+  /*para que no aparesca la fecha para deslizar */
 }
 
 
 .boton-formulario {
-    background-color: #007bff;
-    color: #fff;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-weight: bold;
+  background-color: #007bff;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
 }
 
 .boton-formulario:hover {
-    transform: scale(1.1);
-    background-color: #32d851;
+  transform: scale(1.1);
+  background-color: #32d851;
 }
 
 .imagen_form {
-    position: relative;
-    /* Creo que no afecta en nada */
-    width: 40%;
-    height: 100%;
-    margin: 10px 20px;
-    margin-top: 2%;
-    margin-right: 1%;
+  position: relative;
+  /* Creo que no afecta en nada */
+  width: 40%;
+  height: 100%;
+  margin: 10px 20px;
+  margin-top: 2%;
+  margin-right: 1%;
 }
 
 .imagen_form img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    /* para este caso creo que tampoco afecta en nada */
-    border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* para este caso creo que tampoco afecta en nada */
+  border-radius: 10px;
 }
+
+ /*------------------------------|
+ |          IMG de ING           |
+ |-------------------------------*/
+ .contenedor-de-img-ing {
+  width: 100%;
+  height: 88vh;
+  display: flex; 
+  position: relative; /* para que podamos posicionar el texto y el botón */
+}
+
+.contenedor-de-img-ing .background-ing {
+  width: 186%; 
+  height: 95%; 
+  object-fit: cover; 
+}
+
+.contenedor-de-img-ing .contenido {
+  position: absolute; /* para que podamos posicionar el texto y el botón */
+  top: 40%; /* para que esté en el centro vertical */
+  left: 5%; /* para que esté al lado izquierdo */
+  transform: translateY(-50%); /* para que esté en el centro vertical */
+  color: #fff; 
+}
+
+.h2-ing {
+  font-size: 24px; 
+  margin-bottom: 20px; /* margen inferior */
+}
+
+.p-ing {
+  margin-bottom: 20px;
+}
+
+.boton-de-ING {
+  border: 1px solid #fff; 
+  border-radius: 25px;
+  background-color: transparent; /* botón transparente */
+  color: #fff; 
+  padding: 10px 30px;
+  font-size: 16px; 
+  cursor: pointer; /* para que salga la manito jaja */
+}
+.boton-de-ING:hover {
+  background-color: var(--color1); 
+  color: #fff;
+}
+
+ /*------------------------------|
+ |       CARRERAS de ING         |
+ |-------------------------------*/
+
+ .carreras-h2-ING {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+}
+
+.carreras-titulo-ING {
+  text-align: center;
+  width: 25vw;
+  height: 6vh;
+  border-bottom: 5px solid var(--color1);
+  font-size: 2em;
+  color: var(--color3);
+}
+
+.carreras-ING {
+  height: 114vh;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 12%;
+}
+/* ------------------ ESTA EN JS LAS CLASES-------------------- */
+
+.carrera-ING {
+  width: var(--carrera_width);
+  height: var(--carrera_height);
+  background-image: url(ING/industrial.webp);
+  background-size: var(--carrera_background-size);
+  border-radius: var(--carrera_border-radius);
+  margin: var(--carrera_margin);
+}
+
+.carrera2-ING {
+  background-image: url(ING/sistemas.webp);
+  width: var(--carrera_width);
+  height: var(--carrera_height);
+  background-size: var(--carrera_background-size);
+  border-radius: var(--carrera_border-radius);
+  margin: var(--carrera_margin);
+}
+
+.carrera3-ING {
+  background-image: url(ING/electrico.webp);
+  width: var(--carrera_width);
+  height: var(--carrera_height);
+  background-size: var(--carrera_background-size);
+  border-radius: var(--carrera_border-radius);
+  margin: var(--carrera_margin);
+}
+
+.carrera4-ING {
+  background-image: url(ING/dibujo\ arquitectonico.jpg);
+  width: var(--carrera_width);
+  height: var(--carrera_height);
+  background-size: var(--carrera_background-size);
+  border-radius: var(--carrera_border-radius);
+  margin: var(--carrera_margin);
+}
+
+.carrera5-ING {
+  background-image: url(ING/Mecatrónica\ Industrial.webp);
+  width: var(--carrera_width);
+  height: var(--carrera_height);
+  background-size: var(--carrera_background-size);
+  border-radius: var(--carrera_border-radius);
+  margin: var(--carrera_margin);
+}
+
+.carrera6-ING {
+  background-image: url(ING/Mecánica\ Automotriz.webp);
+  width: var(--carrera_width);
+  height: var(--carrera_height);
+  background-size: var(--carrera_background-size);
+  border-radius: var(--carrera_border-radius);
+  margin: var(--carrera_margin);
+}
+
+ /*------------------------------|
+ |      CARRERAS de DISEÑO       |
+ |-------------------------------*/
+
+ .carreras-h2-DISEÑO {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+}
+
+.carreras-titulo-DISEÑO {
+  text-align: center;
+  width: 25vw;
+  height: 6vh;
+  border-bottom: 5px solid var(--color1);
+  font-size: 2em;
+  color: var(--color3);
+}
+
+.carreras-DISEÑO {
+  height: 114vh;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 12%;
+}
+/* ------------------ ESTA EN JS LAS CLASES-------------------- */
+
+.carrera-DISEÑO {
+  width: var(--carrera_width);
+  height: var(--carrera_height);
+  background-image: url(ING/industrial.webp);
+  background-size: var(--carrera_background-size);
+  border-radius: var(--carrera_border-radius);
+  margin: var(--carrera_margin);
+}
+
+.carrera2-DISEÑO {
+  background-image: url(ING/sistemas.webp);
+  width: var(--carrera_width);
+  height: var(--carrera_height);
+  background-size: var(--carrera_background-size);
+  border-radius: var(--carrera_border-radius);
+  margin: var(--carrera_margin);
+}
+
+.carrera3-DISEÑO {
+  background-image: url(ING/electrico.webp);
+  width: var(--carrera_width);
+  height: var(--carrera_height);
+  background-size: var(--carrera_background-size);
+  border-radius: var(--carrera_border-radius);
+  margin: var(--carrera_margin);
+}
+
+
+
