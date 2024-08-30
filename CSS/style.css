@@ -957,14 +957,17 @@ select {
  .contenedor-de-img-ing {
   width: 100%;
   height: 88vh;
-  display: flex; 
-  position: relative; /* para que podamos posicionar el texto y el botón */
+  display: flex;
+  position: relative;
 }
 
 .contenedor-de-img-ing .background-ing {
-  width: 186%; 
-  height: 95%; 
-  object-fit: cover; 
+  width: 186%;
+  height: 100%;
+  object-fit: cover;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, 0) 100%);
+  background-size: 100% 100%;
+  background-position: 0% 100%;
 }
 
 .contenedor-de-img-ing .contenido {
@@ -976,11 +979,12 @@ select {
 }
 
 .h2-ing {
-  font-size: 24px; 
+  font-size: 30px; 
   margin-bottom: 20px; /* margen inferior */
 }
 
 .p-ing {
+  font-size: 19px;
   margin-bottom: 20px;
 }
 
@@ -1093,7 +1097,7 @@ select {
 
 .carreras-titulo-DISEÑO {
   text-align: center;
-  width: 25vw;
+  width: 20vw;
   height: 6vh;
   border-bottom: 5px solid var(--color1);
   font-size: 2em;
@@ -1101,7 +1105,7 @@ select {
 }
 
 .carreras-DISEÑO {
-  height: 114vh;
+  height: 70vh;
   display: flex;
   flex-wrap: wrap;
   padding: 0 12%;
@@ -1111,14 +1115,14 @@ select {
 .carrera-DISEÑO {
   width: var(--carrera_width);
   height: var(--carrera_height);
-  background-image: url(ING/industrial.webp);
+  background-image: url(DISEÑO/Diseño\ Gráfico.jpg);
   background-size: var(--carrera_background-size);
   border-radius: var(--carrera_border-radius);
   margin: var(--carrera_margin);
 }
 
 .carrera2-DISEÑO {
-  background-image: url(ING/sistemas.webp);
+  background-image: url(DISEÑO/Animacion\ digital.jpeg);
   width: var(--carrera_width);
   height: var(--carrera_height);
   background-size: var(--carrera_background-size);
@@ -1127,13 +1131,69 @@ select {
 }
 
 .carrera3-DISEÑO {
-  background-image: url(ING/electrico.webp);
+  background-image: url(DISEÑO/diseño\ de\ interiores.jpeg);
   width: var(--carrera_width);
   height: var(--carrera_height);
   background-size: var(--carrera_background-size);
   border-radius: var(--carrera_border-radius);
   margin: var(--carrera_margin);
 }
+
+/*------------------------------------------------------|
+ |      CARRERAS de TECNOLOGIAS DE LA INFORMACION       |
+ |-----------------------------------------------------*/
+
+ .carreras-h2-tecnologia {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+}
+
+.carreras-titulo-tecnologia {
+  text-align: center;
+  width: 50vw;
+  height: 6vh;
+  border-bottom: 5px solid var(--color1);
+  font-size: 2em;
+  color: var(--color3);
+}
+
+.carreras-tecnologia {
+  height: 70vh;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 12%;
+}
+/* ------------------ ESTA EN JS LAS CLASES-------------------- */
+
+.carrera-tecnologia {
+  width: var(--carrera_width);
+  height: var(--carrera_height);
+  background-image: url(TECNOLIGIAS_INFORMACION/Computación\ e\ informática.jpeg);
+  background-size: var(--carrera_background-size);
+  border-radius: var(--carrera_border-radius);
+  margin: var(--carrera_margin);
+}
+
+.carrera2-tecnologia {
+  background-image: url(TECNOLIGIAS_INFORMACION/Administración\ de\ Redes\ y\ comunicaciones.webp);
+  width: var(--carrera_width);
+  height: var(--carrera_height);
+  background-size: var(--carrera_background-size);
+  border-radius: var(--carrera_border-radius);
+  margin: var(--carrera_margin);
+}
+
+.carrera3-tecnologia {
+  background-image: url(TECNOLIGIAS_INFORMACION/Administración\ y\ Sistemas.jpeg);
+  width: var(--carrera_width);
+  height: var(--carrera_height);
+  background-size: var(--carrera_background-size);
+  border-radius: var(--carrera_border-radius);
+  margin: var(--carrera_margin);
+}
+
 
 
 

@@ -1,27 +1,27 @@
 const carreras = [];
 let c1 = {
-    "class1": "carrera-DISEÑO",
+    "class1": "carrera-tecnologia",
     "class2": "carrera-fade",
     "class3": "carrera-content",
-    "title": "Diseño Gráfico",
+    "title": "Computación e informática",
     "class4": "carrera-button",
     "link-text": "Descubrir",
     "link": "#"
 }
 let c2 = {
-    "class1": "carrera2-DISEÑO",
+    "class1": "carrera2-tecnologia",
     "class2": "carrera-fade",
     "class3": "carrera-content",
-    "title": "Animación digital",
+    "title": "Administración de Redes y comunicaciones",
     "class4": "carrera-button",
     "link-text": "Descubrir",
     "link": "#"
 }
 let c3 = {
-    "class1": "carrera3-DISEÑO",
+    "class1": "carrera3-tecnologia",
     "class2": "carrera-fade",
     "class3": "carrera-content",
-    "title": "Diseño de interiores",
+    "title": "Administración y Sistemas",
     "class4": "carrera-button",
     "link-text": "Descubrir",
     "link": "#"
@@ -31,7 +31,7 @@ carreras.push(c1);
 carreras.push(c2);
 carreras.push(c3);
 console.log(carreras);
-let sectionCarrerasDISEÑO = document.querySelector(".carreras-DISEÑO");
+let sectionCarrerastecnologia = document.querySelector(".carreras-tecnologia");
 
 let cargarCarreras = ()=>{
     let html = "";
@@ -51,6 +51,6 @@ let cargarCarreras = ()=>{
         `
     })
     
-    sectionCarrerasDISEÑO.innerHTML = html;
+    sectionCarrerastecnologia.innerHTML = html;
 }
 cargarCarreras();
