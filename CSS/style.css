@@ -985,7 +985,7 @@ select {
 
 .p-ing {
   font-size: 19px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .boton-de-ING {
@@ -993,9 +993,10 @@ select {
   border-radius: 25px;
   background-color: transparent; /* botón transparente */
   color: #fff; 
-  padding: 10px 30px;
+  padding: 14px 16px;
   font-size: 16px; 
   cursor: pointer; /* para que salga la manito jaja */
+  text-decoration: none;
 }
 .boton-de-ING:hover {
   background-color: var(--color1); 
@@ -1194,6 +1195,16 @@ select {
   margin: var(--carrera_margin);
 }
 
+/*------------------------------------------------------|
+ |      redireccion (header) para que no lo tape        |
+ |-----------------------------------------------------*/
 
+ html { 
+  scroll-behavior: smooth; 
+}
 
+section#Formulario {
+  scroll-margin-top: 150%;
+}
 
+/* no agarra el estilo de section#formulario */
