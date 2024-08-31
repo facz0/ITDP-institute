@@ -6,23 +6,39 @@
       "lastname": "-",
       "email": "admin@itdp.cl",
       "user": "ADMIN",
-      "pass": "ItDp19#$"
+      "pass": "ItDp19#$",
+      "cursos": []
     },
     {
       "id": "6d31",
       "name": "Fabrizio",
       "lastname": "Cossío",
       "email": "fabcos@outlook.com",
-      "user": "fabcos",
-      "pass": "1234567"
+      "user": "fabcoz",
+      "pass": "1234567",
+      "cursos": [
+        {
+          "id":"001", "title": "Administración y Sistemas",
+          "profesor": "Laura Méndez","id_curso": "A1B2C3"
+        },
+        {
+          "id":"002", "title": "Computación e informática",
+          "profesor": "Carlos Ruiz","id_curso": "4D5E6F"
+        },
+        {
+          "id":"003","title": "Electricidad Industrial",
+          "profesor": "Mariana López","id_curso": "G7H8I9"
+        }
+      ]
     },
     {
       "id": "d71d",
       "name": "Piero",
       "lastname": "Romero",
       "email": "Promero@gmail.com",
-      "user": "Promerof",
-      "pass": "123789yu"
+      "user": "Promerol",
+      "pass": "123789yu",
+      "cursos": []
     },
     {
       "id": "1b41",
@@ -30,7 +46,8 @@
       "lastname": "Medina",
       "email": "diegomedina@gmail.com",
       "user": "diegomedina",
-      "pass": "asdfghjkl"
+      "pass": "asdfghjkl",
+      "cursos": []
     },
     {
       "id": "b17c",
@@ -39,7 +56,81 @@
       "email": "rcle@gfmil.com",
       "user": "rcle",
       "pass": "123456789",
-      "cursos": {}
+      "cursos": []
+    }
+  ],
+  "Cursos":[
+    {
+      "id":"001",
+      "title": "Administración y Sistemas",
+      "profesor": "Laura Méndez",
+      "id_curso": "A1B2C3"
+    },
+    {
+      "id":"002",
+      "title": "Computación e informática",
+      "profesor": "Carlos Ruiz",
+      "id_curso": "4D5E6F"
+    },
+    {
+      "id":"003",
+      "title": "Electricidad Industrial",
+      "profesor": "Mariana López",
+      "id_curso": "G7H8I9"
+    },
+    {
+      "id":"004",
+      "title": "Dibujo Arquitectónico",
+      "profesor": "Andrés García",
+      "id_curso": "J0K1L2"
+    },
+    {
+      "id":"005",
+      "title": "Mecánica Automotríz",
+      "profesor": "Sofía Fernández",
+      "id_curso": "M3N4O5"
+    },
+    {
+      "id":"006",
+      "title": "Diseño Gráfico",
+      "profesor": "Ricardo Torres",
+      "id_curso": "P6Q7R8"
+    },
+    {
+      "id":"007",
+      "title": "Ingeniería Electrónica",
+      "profesor": "Patricia Morales",
+      "id_curso": "S9T0U1"
+    },
+    {
+      "id": "008",
+      "title": "Administración de Redes y comunicaciones",
+      "profesor": "Laura Méndez",
+      "codigo": "A1B2C3"
+    },
+    {
+      "id": "009",
+      "title": "Industrial y Sistemas",
+      "profesor": "Carlos Ruiz",
+      "codigo": "4D5E6F"
+    },
+    {
+      "id": "010",
+      "title": "Mecatrónica Industrial",
+      "profesor": "Mariana López",
+      "codigo": "G7H8I9"
+    },
+    {
+      "id": "011",
+      "title": "Animación digital",
+      "profesor": "Andrés García",
+      "codigo": "J0K1L2"
+    },
+    {
+      "id": "0012",
+      "title": "Diseño de interiores",
+      "profesor": "Sofía Fernández",
+      "codigo": "M3N4O5"
     }
   ]
 }

@@ -1,7 +1,6 @@
 const carreras = [];
 let c1 = {
     "class1": "carrera",
-    "class2": "carrera-fade",
     "class3": "carrera-content",
     "title": "Administración y Sistemas",
     "profesor": "Laura Méndez",
@@ -9,7 +8,6 @@ let c1 = {
 }
 let c2 = {
     "class1": "carrera",
-    "class2": "carrera-fade",
     "class3": "carrera-content",
     "title": "Computación e informática",
     "profesor": "Carlos Ruiz",
@@ -17,7 +15,6 @@ let c2 = {
 }
 let c3 = {
     "class1": "carrera",
-    "class2": "carrera-fade",
     "class3": "carrera-content",
     "title": "Electricidad Industrial",
     "profesor": "Mariana López",
@@ -25,7 +22,6 @@ let c3 = {
 }
 let c4 = {
     "class1": "carrera",
-    "class2": "carrera-fade",
     "class3": "carrera-content",
     "title": "Dibujo Arquitectónico",
     "profesor": "Andrés García",
@@ -33,7 +29,6 @@ let c4 = {
 }
 let c5 = {
     "class1": "carrera",
-    "class2": "carrera-fade",
     "class3": "carrera-content",
     "title": "Mecánica Automotríz",
     "profesor": "Sofía Fernández",
@@ -41,7 +36,6 @@ let c5 = {
 }
 let c6 = {
     "class1": "carrera",
-    "class2": "carrera-fade",
     "class3": "carrera-content",
     "title": "Diseño Gráfico",
     "profesor": "Ricardo Torres",
@@ -49,7 +43,6 @@ let c6 = {
 }
 let c7 = {
     "class1": "carrera",
-    "class2": "carrera-fade",
     "class3": "carrera-content",
     "title": "Ingeniería Electrónica",
     "profesor": "Patricia Morales",
@@ -71,13 +64,11 @@ let cargarCarreras = ()=>{
         html +=
         `
         <section class="${i.class1}">
-            <div class="${i.class2}">
                 <div class="${i.class3}">
                     <p class="cod_curso">Cófigo: ${i.id_curso}</p>
                     <h3 class="titulo_curso">${i.title}</h3>
                     <p class="info_curso">En curso  |  Profesor: ${i.profesor}</p>
                 </div>
-            </div>
         </section>
         `
     })

@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', fn_ob_datos)
 document.addEventListener('DOMContentLoaded', fn_mostrarDatos)
 document.addEventListener('DOMContentLoaded', fn_editar)
 const url = "http://localhost:3000/Users"
+const url2 = "http://localhost:3000/Cursos"
 //login
 let log_ob_user = document.getElementById("username")
 let log_ob_pass = document.getElementById("pass")
@@ -22,6 +23,7 @@ let edit_email = document.getElementById("txtEmail")
 let edit_user = document.getElementById("txtUser")
 let edit_password = document.getElementById("txtPassword")
 let btnGuardar = document.getElementById("btnGuardar")
+
 
 //GET para validar login
 function fn_ob_datos(){
@@ -54,6 +56,25 @@ function fn_ob_datos(){
     })
 }
 
+
+//intento fallido
+function mostrar_curso(){
+    Promise.all([fetch(url), fetch(url2)])
+    .then(res => {
+        return Promise.all(res.map(res => res.json()))
+    })
+    .then(([Users, Cursos])=>{
+        console.log("Users:", Users[1].cursos[0]);
+        console.log("Cursos:", Cursos[2].id_curso);
+        Cursos.forEach((i)=>{
+            if(Users[1].cursos[0] === i.id_curso){
+                console.log(i.title)
+            }
+        })
+    })
+}
+
+
 //REGISTRARSE
 btnRegistrar.addEventListener('click', fn_registrar)
 function fn_registrar(){
@@ -69,7 +90,7 @@ function fn_registrar(){
             "email": reg_ob_email.value,
             "user": reg_ob_user,
             "pass": reg_ob_pass.value,
-            "cursos":{}
+            "cursos":[]
         })
     }
     fetch(url, opciones)
@@ -167,6 +188,8 @@ function fn_editar(indice){
     });
     
 }
+
+
 
 
 /*---------------------------------------------

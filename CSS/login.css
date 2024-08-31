@@ -27,6 +27,7 @@ body{
     overflow: hidden;
     transition: transform .5s, height .2s ease;
     transform: scale(1);
+    font-family: "Noto Sans", system-ui;
 }
 
 .fondo.active-btn {
@@ -168,16 +169,44 @@ body{
     background-color: #090f1d;
     color: #F1EFEF;
 }
+#btn-registrar{
+    color: #fff;
+    background-color: #090f1d;
+    height: 5vh;
+    width: 8vw;
+    font-size: 1em;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#btn-registrar:hover{
+    background-color: #111e3b;
+    transition: ease .5s;
+}
+#btn-iniciar{
+    color: #fff;
+    background-color: #090f1d;
+    height: 4vh;
+    width: 7vw;
+    font-size: .9em;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#btn-iniciar:hover{
+    background-color: #111e3b;
+    transition: ease .5s;
+}
 
 .registrar {
-    font-size: .9em;
-    color: #F1EFEF;
+    font-size: 1.1em;
+    color: #090f1d;;
     text-align: center;
     margin: 25px 0 10px;
 }
 
 .registrar p a {
-    color: #F1EFEF;
+    color: #090f1d;;
     text-decoration: none;
 }
 

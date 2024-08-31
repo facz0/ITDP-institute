@@ -976,12 +976,9 @@ select {
   height: 88vh;
   display: flex;
   position: relative;
-<<<<<<< HEAD
-  background-image: url(DISEÑO/diseño-inicio.jpg);
-=======
   background-image: url(ING/inicio.jpg);
->>>>>>> b0f8412cb0ef5081712e7eac601138a490975aed
   object-fit: cover;
+  font-family: "Noto Sans", system-ui;
 }
 
 .contenido {
@@ -1030,11 +1027,12 @@ select {
 
 .carreras-titulo-ING {
   text-align: center;
-  width: 25vw;
-  height: 6vh;
+  width: 29vw;
+  height: 9vh;
   border-bottom: 5px solid var(--color1);
   font-size: 2em;
   color: var(--color3);
+  font-family: "Noto Sans", system-ui;
 }
 
 .carreras-ING {
@@ -1042,6 +1040,7 @@ select {
   display: flex;
   flex-wrap: wrap;
   padding: 0 12%;
+  font-family: "Noto Sans", system-ui;
 }
 /* ------------------ ESTA EN JS LAS CLASES-------------------- */
 
@@ -1110,6 +1109,7 @@ select {
   position: relative;
   background-image: url(DISEÑO/diseño-inicio.jpg);
   object-fit: cover;
+  font-family: "Noto Sans", system-ui;
 }
 
  .carreras-h2-DISEÑO {
@@ -1121,11 +1121,12 @@ select {
 
 .carreras-titulo-DISEÑO {
   text-align: center;
-  width: 20vw;
-  height: 6vh;
+  width: 25vw;
+  height: 8vh;
   border-bottom: 5px solid var(--color1);
   font-size: 2em;
   color: var(--color3);
+  font-family: "Noto Sans", system-ui;
 }
 
 .carreras-DISEÑO {
@@ -1133,6 +1134,7 @@ select {
   display: flex;
   flex-wrap: wrap;
   padding: 0 12%;
+  font-family: "Noto Sans", system-ui;
 }
 /* ------------------ ESTA EN JS LAS CLASES-------------------- */
 
@@ -1174,6 +1176,7 @@ select {
   position: relative;
   background-image: url(TECNOLIGIAS_INFORMACION/Tecnologias\ de\ la\ informacion.jpg);
   object-fit: cover;
+  font-family: "Noto Sans", system-ui;
 }
 
  .carreras-h2-tecnologia {
@@ -1185,11 +1188,12 @@ select {
 
 .carreras-titulo-tecnologia {
   text-align: center;
-  width: 50vw;
-  height: 6vh;
+  width: 63vw;
+  height: 9vh;
   border-bottom: 5px solid var(--color1);
   font-size: 2em;
   color: var(--color3);
+  font-family: "Noto Sans", system-ui;
 }
 
 .carreras-tecnologia {
@@ -1197,6 +1201,7 @@ select {
   display: flex;
   flex-wrap: wrap;
   padding: 0 12%;
+  font-family: "Noto Sans", system-ui;
 }
 /* ------------------ ESTA EN JS LAS CLASES-------------------- */
 
