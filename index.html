@@ -13,33 +13,45 @@
     <!-- api de iconos 2 -->
     <script src="https://kit.fontawesome.com/6d29a0c53e.js" crossorigin="anonymous"></script>
 
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
     <header>
         <nav>
             <div class="logo">
-                <img src="images/logoFull.png" alt="Logo">
+                <a href="index.html">
+                    <img src="images/logoFull.png" alt="Logo">
+                </a>
             </div>
             <ul class="menu">
                 <li class="dropdown">
                     <a href="#">CARRERAS</a>
                     <ul class="submenu">
-                        <li><a onclick="window.location.href='carreras_Tecno.html'" href="#"><i class="fa-solid fa-laptop-code fa-2xl"></i>CARRERAS DE TECNOLOGÍAS DE LA
-                                INFORMACIÓN</a></li>
-                        <li><a onclick="window.location.href='carreras_ING.html'"><i class='bx bx-hard-hat bx-lg'></i>CARRERAS DE INGENIERÍA</a></li>
-                        <li><a onclick="window.location.href='carreras_DISEÑO.html'" href="#"><i class="fa-solid fa-pen-nib fa-2xl"></i>CARRERAS DE DISEÑO</a></li>
+                        <li>
+                            <i class="fa-solid fa-laptop-code fa-2xl"></i>
+                            <a onclick="window.location.href='carreras_Tecno.html'" href="#">CARRERAS DE TECNOLOGÍAS DE LAINFORMACIÓN</a>
+                        </li>
+                        <li>
+                            <i class='bx bx-hard-hat bx-lg'></i>
+                            <a onclick="window.location.href='carreras_ING.html'">CARRERAS DE INGENIERÍA</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-pen-nib fa-2xl"></i>
+                            <a onclick="window.location.href='carreras_DISEÑO.html'" href="#">CARRERAS DE DISEÑO</a>
+                        </li>
                     </ul>
                 </li>
                 <li class="dropdown">
-                    <a href="#">CURSOS CORTOS</a>
+                    <a href="cursos_co.html">CURSOS CORTOS</a>
                     <ul class="submenu">
-                        <li><a href="#"><i class="fa-regular fa-file-excel fa-2xl"></i>Excel profesional</a></li>
-                        <li><a href="#"><i class='bx bxl-python bx-lg'></i>Python</a></li>
-                        <li><a href="#"><i class='bx bxl-java bx-lg'></i>Java</a></li>
-                        <li><a href="#"><i class='bx bxl-html5 bx-lg'></i>HTML y CSS</a></li>
-                        <li><a href="#"><i class="fa-solid fa-gamepad fa-2xl"></i>Creación de vedeojuegos</a></li>
-                        <li><a href="#"><i class='bx bx-desktop bx-lg'></i>Reparación de PC</a></li>
+                        <li><i class="fa-regular fa-file-excel fa-2xl"></i><a href="#">Excel profesional</a></li>
+                        <li><i class='bx bxl-python bx-lg'></i><a href="#">Python</a></li>
+                        <li><i class='bx bxl-java bx-lg'></i><a href="#">Java</a></li>
+                        <li><i class='bx bxl-html5 bx-lg'></i><a href="#">HTML y CSS</a></li>
+                        <li><i class="fa-solid fa-gamepad fa-2xl"></i><a href="#">Creación de vedeojuegos</a></li>
+                        <li><i class='bx bx-desktop bx-lg'></i><a href="#">Reparación de PC</a></li>
                     </ul>
                 </li>
                 <li class="dropdown">
@@ -183,6 +195,16 @@
     <script src="JS/carreras.js"></script>
     <script src="JS/cursos.js"></script>
     <script src="JS/cursos-slider.js"></script>
+    <script>
+        document.addEventListener('scroll', ()=>{
+            const nav = document.querySelector("nav")
+            if(window.scrollY > 0){
+                nav.classList.add("scrolled")
+            }else{
+                nav.classList.remove("scrolled")
+            }
+        })
+    </script>
 </body>
 
 </html>

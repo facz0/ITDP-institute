@@ -1,6 +1,6 @@
 :root {
   --color1: #00a5d4;
-  --color2: rgba(0, 0, 0, 0.274);
+  --color2: rgba(0, 0, 0, 0.319);
   --color3: rgb(58, 58, 58);
   --carrera_width: calc(94% / 3);
   --carrera_height: calc(107vh / 2);
@@ -32,7 +32,9 @@ nav {
   height: 100px;
   box-sizing: border-box;
   z-index: 1000;
+  transition: background-color 0.3s ease-in-out;
 }
+
 
 .logo {
   width: 14%;
@@ -49,11 +51,14 @@ nav {
   display: flex;
   flex-grow: 1;
   justify-content: center;
+  font-family: "Noto Sans", sans-serif;
+  height: 90%;
 }
 
 .menu li {
   position: relative;
   margin: 0 20px;
+  height: 100%;
 }
 
 .menu li a {
@@ -61,9 +66,13 @@ nav {
   text-decoration: none;
   padding: 8px 16px;
   display: block;
+  font-size: 1.2em;
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 
-.menu li a:hover {
+.menu li:hover {
   background-color: gray;
   border-radius: 10px;
 }
@@ -86,6 +95,8 @@ nav {
 
 .submenu li {
   margin: 0 5px;
+  display: flex;
+  align-items: center;
 }
 
 .submenu li a {
@@ -95,6 +106,7 @@ nav {
   align-items: center;
   justify-content: center;
   height: 100%;
+  font-size: 1em;
 }
 
 .submenu li a:hover {
@@ -108,26 +120,18 @@ nav {
 }
 
 .inscribete {
-  margin-left: auto;
+  margin-left: 1%;
 }
 
 .inscribete button {
-  background-color: gray;
+  background-color: rgb(104, 104, 104);
   color: white;
-  /*border: none;
-    width: 100%;
-    padding: 10px 30px;
-    cursor: pointer;
-    font-size: 16px;
-    border-radius: 20px;
-    lo modifique por siaca aca esta el original*/
-  height: 45px;
   border: none;
-  padding: 10px 25px;
-  border-radius: 25px;
+  width: 100%;
+  padding: 10px 30px;
   cursor: pointer;
-  font-size: 1em;
-  font-weight: bold;
+  font-size: 1.2em;
+  border-radius: 20px;
 }
 
 .inscribete button:hover {
@@ -147,6 +151,7 @@ main {
   height: 97vh;
   background-color: rgb(255, 255, 255);
   overflow: hidden;
+  font-family: "Noto Sans", sans-serif;
 }
 
 .carruseles {
@@ -205,6 +210,7 @@ main {
   height: 40vh;
   display: flex;
   background-color: var(--color1);
+  font-family: "Noto Sans", sans-serif;
 }
 
 .itdp-name {
@@ -237,6 +243,7 @@ main {
   border-bottom: 5px solid var(--color1);
   font-size: 2em;
   color: var(--color3);
+  font-family: "Noto Sans", sans-serif;
 }
 
 .carreras-content {
@@ -244,6 +251,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   padding: 0 12%;
+  font-family: "Noto Sans", sans-serif;
 }
 
 .carrera {
@@ -366,6 +374,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: "Noto Sans", sans-serif;
 }
 
 .conoce-mas button {
@@ -407,12 +416,13 @@ main {
   justify-content: center;
   align-items: center;
   height: 30vh;
+  font-family: "Noto Sans", sans-serif;
 }
 
 .cursos-h2-container h2 {
   text-align: center;
   width: 26vw;
-  height: 8vh;
+  height: 10vh;
   border-bottom: 5px solid var(--color1);
   font-size: 2.5em;
   color: var(--color3);
@@ -430,6 +440,7 @@ main {
   width: 200%;
   height: 100%;
   display: flex;
+  font-family: "Noto Sans", sans-serif;
 }
 
 .cursos-slider-section {
@@ -595,10 +606,11 @@ main {
 |            FOOTER             |
 |-------------------------------*/
 footer {
-  background-color: white;
+  background-color: rgb(190, 245, 255);
   color: black;
   padding: 20px 0;
   margin-top: 10vh;
+  font-family: "Noto Sans", sans-serif;
 }
 
 .footer-container {
@@ -683,6 +695,7 @@ footer {
   border-left: 5px solid var(--color1);
   padding: 0 0 0 3%;
   font-size: 1.4em;
+  font-family: "Noto Sans", system-ui;
 }
 
 .curso-content-impar-text-parrafo {
@@ -817,9 +830,11 @@ footer {
   height: 15%;
   display: flex;
   align-items: center;
-  border-left: 5px solid var(--color2);
-  padding: 0 0 0 3%;
+  border-right: 5px solid var(--color2);
+  padding: 0 3% 0 0;
   font-size: 1.4em;
+  justify-content: flex-end;
+  font-family: "Noto Sans", system-ui;
 }
 
 .curso-content-par-text-parrafo {
@@ -857,6 +872,7 @@ footer {
   border: 1px solid var(--color3);
   padding: 20px;
   border-radius: 10px;
+  font-family: "Noto Sans", system-ui;
 }
 
 /*-----------------------|
@@ -872,6 +888,7 @@ footer {
   border-radius: 5px;
   border: 2px solid var(--color2);
   align-items: center;
+  font-family: "Noto Sans", system-ui; 
 }
 
 .form-seccion {
@@ -959,15 +976,8 @@ select {
   height: 88vh;
   display: flex;
   position: relative;
-}
-
-.contenedor-de-img-ing .background-ing {
-  width: 186%;
-  height: 100%;
+  background-image: url(DISEÑO/diseño-inicio.jpg);
   object-fit: cover;
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, 0) 100%);
-  background-size: 100% 100%;
-  background-position: 0% 100%;
 }
 
 .contenedor-de-img-ing .contenido {
