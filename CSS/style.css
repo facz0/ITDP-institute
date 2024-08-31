@@ -976,11 +976,15 @@ select {
   height: 88vh;
   display: flex;
   position: relative;
+<<<<<<< HEAD
   background-image: url(DISEÑO/diseño-inicio.jpg);
+=======
+  background-image: url(ING/inicio.jpg);
+>>>>>>> b0f8412cb0ef5081712e7eac601138a490975aed
   object-fit: cover;
 }
 
-.contenedor-de-img-ing .contenido {
+.contenido {
   position: absolute; /* para que podamos posicionar el texto y el botón */
   top: 40%; /* para que esté en el centro vertical */
   left: 5%; /* para que esté al lado izquierdo */
@@ -1099,6 +1103,15 @@ select {
  |      CARRERAS de DISEÑO       |
  |-------------------------------*/
 
+ .contenedor-de-img-diseño {
+  width: 100%;
+  height: 88vh;
+  display: flex;
+  position: relative;
+  background-image: url(DISEÑO/diseño-inicio.jpg);
+  object-fit: cover;
+}
+
  .carreras-h2-DISEÑO {
   display: flex;
   justify-content: center;
@@ -1153,6 +1166,15 @@ select {
 /*------------------------------------------------------|
  |      CARRERAS de TECNOLOGIAS DE LA INFORMACION       |
  |-----------------------------------------------------*/
+
+ .contenedor-de-img-tecno {
+  width: 100%;
+  height: 88vh;
+  display: flex;
+  position: relative;
+  background-image: url(TECNOLIGIAS_INFORMACION/Tecnologias\ de\ la\ informacion.jpg);
+  object-fit: cover;
+}
 
  .carreras-h2-tecnologia {
   display: flex;
@@ -1210,11 +1232,6 @@ select {
  |-----------------------------------------------------*/
 
  html { 
-  scroll-behavior: smooth; 
+  scroll-behavior: smooth; /* para que cuendo se redireccione se deslice  */
 }
 
-section#Formulario {
-  scroll-margin-top: 150%;
-}
-
-/* no agarra el estilo de section#formulario */
